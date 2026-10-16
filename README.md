@@ -1,69 +1,44 @@
 # Zak Rademacher
 
-I’m a retail operations manager focused on practical data work with Python, SQL, Excel, and Google Sheets. I’m available for part-time remote projects involving data entry, data cleanup, reporting, and straightforward automation.
+I help turn messy Excel and CSV exports into organized data, exception lists and clear business reports. My focus is data cleanup, Python/SQL reporting and straightforward Power BI reports, with documented checks and refresh instructions.
 
-## Featured projects
+I work full-time as a retail operations manager and am available for **15–20 hours of remote project work per week**.
 
-### [Commerce Operations | Power BI](https://github.com/ZakJRademacher/commerce-operations-powerbi)
+[Work with me on Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17)
 
-A native four-page Power BI report using **99,441 historical Olist orders from Kaggle**.
+## Explore the portfolio
 
-- Interactive delivery, merchandise and data-quality reviews with explicit metric definitions.
-- Validated Python cleanup, grain-safe joins, exact currency and independent SQLite reconciliation.
-- Downloadable PBIX with imported demo data, editable model/report source, 15 tests and refresh documentation.
-- Includes actual Desktop exports and a practical walkthrough for explaining the work.
+| Need | Work sample | Inspect the result |
+|---|---|---|
+| Understand delivery performance and merchandise | [Commerce Operations — Power BI](https://github.com/ZakJRademacher/commerce-operations-powerbi) | [Four-page report](https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Operations%20Dashboard.pdf) |
+| Repeat a monthly sales review | [Monthly Sales Automation](https://github.com/ZakJRademacher/monthly-sales-automation) | [Case study](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/case-study.pdf) |
+| Clean and reconcile transaction data | [Retail Sales & Data Quality](https://github.com/ZakJRademacher/retail-sales-data-quality) | [Case study](https://github.com/ZakJRademacher/retail-sales-data-quality/blob/main/deliverables/case-study.pdf) |
+| Prepare an exception queue and preserve review notes | [Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations) | [Management briefing](https://github.com/ZakJRademacher/complaint-intake-operations/blob/main/deliverables/case-study.pdf) |
 
-[View the report preview](https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Operations%20Dashboard.pdf) · [Read the case study](https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/docs/case-study.md)
+### Commerce operations in Power BI
 
-### [Monthly Sales Report Automation](https://github.com/ZakJRademacher/monthly-sales-automation)
+A native four-page report covering **99,441 historical Olist orders**. Interactive views compare delivery workload and rates, merchandise categories and data quality. Includes Python cleanup, SQLite reconciliation, a downloadable PBIX, editable model/report definitions and a refresh guide.
 
-A sales-review workflow using **9,800 Kaggle Superstore sample lines across 48 monthly files**.
+### Monthly sales automation
 
-- New monthly CSVs return a written sales summary, category/regional drivers and ranked review leads with source product IDs.
-- The matched December example finds sales down 12.6% despite 33.5% more orders, with average order value down 34.6%.
-- Python-only mode produces useful HTML and CSV outputs without extra packages; an optional Excel report adds live formulas.
-- Saved reviewer notes stay attached to month/category keys across refreshes.
-- Conflicting imports preserve the last successful report.
-- Includes 32 automated tests, actual refresh evidence and a complete operating guide.
+A repeatable review of **9,800 Superstore sample lines across 48 monthly files**. Python produces written findings, category/regional comparisons and ranked product follow-ups in HTML and CSV. An optional Excel output adds formulas and a chart. Saved notes survive refresh; rejected imports preserve the previous report.
 
-[Read the case study](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/case-study.pdf) · [Explore the automation](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/refresh.py)
+### Retail sales and data quality
 
-### [Retail Sales & Data Quality Audit](https://github.com/ZakJRademacher/retail-sales-data-quality)
+An audit of **541,909 actual historical retail transaction lines**. Preserves source-row traceability, handles cancellations and missing customer IDs, and reconciles exact monetary totals across SQL reports. Includes an editable Excel review and documented duplicate sensitivity.
 
-A documented analysis of **541,909 actual retail transaction lines** from Kaggle/UCI.
+### Complaint intake operations
 
-- Python ingestion and data validation with original-row traceability.
-- SQL reports for monthly sales, countries, product rankings, and data-quality exceptions.
-- An editable Excel workbook and a concise PDF case study.
-- Reproducible setup, source attribution, clear limitations, and automated tests.
+A reporting workflow using **903,983 historical complaint records**. Validates IDs and dates, produces SQL summaries and an Excel review queue, and preserves reviewer notes by complaint ID. The handoff defines routing intervals, review rules and the limits of the selected examples.
 
-[Read the case study](https://github.com/ZakJRademacher/retail-sales-data-quality/blob/main/deliverables/case-study.pdf) · [Explore the code](https://github.com/ZakJRademacher/retail-sales-data-quality/tree/main/src)
+## Working approach
 
-### [Complaint Intake & Response Operations](https://github.com/ZakJRademacher/complaint-intake-operations)
+- Agree on the input format, reporting period, metric definitions and expected output.
+- Preserve source data and make missing values, duplicates and exceptions visible.
+- Check totals and provide practical instructions for rerunning the work.
 
-A recurring reporting and review workflow using **903,983 actual Kaggle/CFPB complaint records**.
+These are independent portfolio demonstrations using attributed public datasets. Each repository includes source/licensing details, tests, methods and operating instructions. Adapting a client export requires mapping and validation; the examples do not claim live integrations or paid client results.
 
-- Python validation of IDs and dates, plus SQLite channel and monthly reports.
-- A three-sheet Excel workbook with a chart, formulas and a review-status dropdown.
-- Reviewer-note import that preserves saved work across report refreshes.
-- A two-page management briefing, full handoff documentation and 14 automated tests.
+## Background
 
-[Read the briefing](https://github.com/ZakJRademacher/complaint-intake-operations/blob/main/deliverables/case-study.pdf) · [Explore the workflow](https://github.com/ZakJRademacher/complaint-intake-operations/tree/main/src)
-
-## What I can help with
-
-- Organizing and cleaning spreadsheet or CSV data.
-- Checking for duplicates, missing fields, and inconsistent formatting.
-- Writing SQL queries to filter, join, and summarize information.
-- Using Python to automate repetitive data-processing tasks.
-- Turning results into clear reports with documented checks and refresh instructions.
-
-## Background and interests
-
-I work full-time as an Operations Manager at Albertsons and have college coursework in computer science. My Python and SQL skills are intermediate. I’m interested in business and government data, science, technology, and finance.
-
-## Work with me
-
-[View my Upwork profile](https://www.upwork.com/freelancers/~0155455f2cab08db17)
-
-My portfolio focuses on practical deliverables, reproducible methods, clear documentation, and results that can be checked.
+Operations Manager at Albertsons, with computer-science college coursework and intermediate Python and SQL skills. My practical focus is small, clearly scoped cleanup and reporting projects.
