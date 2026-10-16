@@ -6,12 +6,14 @@ I’m a retail operations manager focused on practical data work with Python, SQ
 
 ### [Monthly Sales Report Automation](https://github.com/ZakJRademacher/monthly-sales-automation)
 
-A repeatable CSV-to-Excel workflow using **9,800 Kaggle Superstore sample lines across 48 monthly files**.
+A sales-review workflow using **9,800 Kaggle Superstore sample lines across 48 monthly files**.
 
-- One command validates deliveries, runs SQL reports and generates a dated Excel workbook.
+- New monthly CSVs return a written sales summary, category/regional drivers and ranked review leads with source product IDs.
+- The matched December example finds sales down 12.6% despite 33.5% more orders, with average order value down 34.6%.
+- Python-only mode produces useful HTML and CSV outputs without extra packages; an optional Excel report adds live formulas.
 - Saved reviewer notes stay attached to month/category keys across refreshes.
 - Conflicting imports preserve the last successful report.
-- Includes 23 automated tests, real workbook refresh evidence and a complete operating guide.
+- Includes 32 automated tests, actual refresh evidence and a complete operating guide.
 
 [Read the case study](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/case-study.pdf) · [Explore the automation](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/refresh.py)
 
