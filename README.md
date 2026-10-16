@@ -4,6 +4,17 @@ I’m a retail operations manager focused on practical data work with Python, SQ
 
 ## Featured projects
 
+### [Commerce Operations | Power BI](https://github.com/ZakJRademacher/commerce-operations-powerbi)
+
+A native four-page Power BI report using **99,441 historical Olist orders from Kaggle**.
+
+- Interactive delivery, merchandise and data-quality reviews with explicit metric definitions.
+- Validated Python cleanup, grain-safe joins, exact currency and independent SQLite reconciliation.
+- Downloadable PBIX with imported demo data, editable model/report source, 15 tests and refresh documentation.
+- Includes actual Desktop exports and a practical walkthrough for explaining the work.
+
+[View the report preview](https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Operations%20Dashboard.pdf) · [Read the case study](https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/docs/case-study.md)
+
 ### [Monthly Sales Report Automation](https://github.com/ZakJRademacher/monthly-sales-automation)
 
 A sales-review workflow using **9,800 Kaggle Superstore sample lines across 48 monthly files**.
