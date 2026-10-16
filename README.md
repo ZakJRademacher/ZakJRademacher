@@ -4,6 +4,17 @@ I’m a retail operations manager focused on practical data work with Python, SQ
 
 ## Featured projects
 
+### [Monthly Sales Report Automation](https://github.com/ZakJRademacher/monthly-sales-automation)
+
+A repeatable CSV-to-Excel workflow using **9,800 Kaggle Superstore sample lines across 48 monthly files**.
+
+- One command validates deliveries, runs SQL reports and generates a dated Excel workbook.
+- Saved reviewer notes stay attached to month/category keys across refreshes.
+- Conflicting imports preserve the last successful report.
+- Includes 23 automated tests, real workbook refresh evidence and a complete operating guide.
+
+[Read the case study](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/case-study.pdf) · [Explore the automation](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/refresh.py)
+
 ### [Retail Sales & Data Quality Audit](https://github.com/ZakJRademacher/retail-sales-data-quality)
 
 A documented analysis of **541,909 actual retail transaction lines** from Kaggle/UCI.
