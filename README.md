@@ -10,10 +10,15 @@ I work full-time as a retail operations manager and am available for **15–20 h
 
 | Need | Work sample | Inspect the result |
 |---|---|---|
+| Combine messy recurring CSV exports in Excel | [Excel Export Consolidator](https://github.com/ZakJRademacher/excel-export-consolidator) | [Native workbook and refresh guide](https://github.com/ZakJRademacher/excel-export-consolidator#try-the-sample) |
 | Understand delivery performance and merchandise | [Commerce Operations — Power BI](https://github.com/ZakJRademacher/commerce-operations-powerbi) | [Four-page report](https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Operations%20Dashboard.pdf) |
 | Explore sales and repeat a monthly review | [Interactive Sales Explorer — Power BI](https://github.com/ZakJRademacher/monthly-sales-automation) | [Four-page preview](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/Monthly%20Sales%20Explorer.pdf) |
 | Clean and reconcile transaction data | [Retail Sales & Data Quality](https://github.com/ZakJRademacher/retail-sales-data-quality) | [Case study](https://github.com/ZakJRademacher/retail-sales-data-quality/blob/main/deliverables/case-study.pdf) |
 | Prepare an exception queue and preserve review notes | [Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations) | [Management briefing](https://github.com/ZakJRademacher/complaint-intake-operations/blob/main/deliverables/case-study.pdf) |
+
+### Excel export consolidation
+
+A macro-free Excel Power Query workbook that merges recurring CSV exports, standardizes known column/date formats, skips identical repeats and separates corrections from accepted records. Source filename and record numbers make every output traceable. Native Excel refresh tests cover adding a file, unchanged inputs, an unsupported filename and restoring the baseline. Includes the workbook, sample data, Python reference checks, 16 tests and full handoff documentation.
 
 ### Commerce operations in Power BI
 
