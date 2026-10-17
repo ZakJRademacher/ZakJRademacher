@@ -11,7 +11,7 @@ I work full-time as a retail operations manager and am available for **15–20 h
 | Need | Work sample | Inspect the result |
 |---|---|---|
 | Understand delivery performance and merchandise | [Commerce Operations — Power BI](https://github.com/ZakJRademacher/commerce-operations-powerbi) | [Four-page report](https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Operations%20Dashboard.pdf) |
-| Repeat a monthly sales review | [Monthly Sales Automation](https://github.com/ZakJRademacher/monthly-sales-automation) | [Case study](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/case-study.pdf) |
+| Explore sales and repeat a monthly review | [Interactive Sales Explorer — Power BI](https://github.com/ZakJRademacher/monthly-sales-automation) | [Four-page preview](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/Monthly%20Sales%20Explorer.pdf) |
 | Clean and reconcile transaction data | [Retail Sales & Data Quality](https://github.com/ZakJRademacher/retail-sales-data-quality) | [Case study](https://github.com/ZakJRademacher/retail-sales-data-quality/blob/main/deliverables/case-study.pdf) |
 | Prepare an exception queue and preserve review notes | [Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations) | [Management briefing](https://github.com/ZakJRademacher/complaint-intake-operations/blob/main/deliverables/case-study.pdf) |
 
@@ -19,9 +19,9 @@ I work full-time as a retail operations manager and am available for **15–20 h
 
 A native four-page report covering **99,441 historical Olist orders**. Interactive views compare delivery workload and rates, merchandise categories and data quality. Includes Python cleanup, SQLite reconciliation, a downloadable PBIX, editable model/report definitions and a refresh guide.
 
-### Monthly sales automation
+### Interactive sales explorer in Power BI
 
-A repeatable review of **9,800 Superstore sample lines across 48 monthly files**. Python produces written findings, category/regional comparisons and ranked product follow-ups in HTML and CSV. An optional Excel output adds formulas and a chart. Saved notes survive refresh; rejected imports preserve the previous report.
+A native four-page dashboard over **9,800 Superstore sample lines across 48 monthly files**. Synchronized filters, a category ribbon, interacting change bars and product-to-source exploration support a monthly business review. Python/SQL validates exports before Power BI Refresh imports them. Includes a downloadable PBIX, editable source, supporting Excel/HTML reports, 38 tests, native DAX checks and an actual November-to-December refresh replay.
 
 ### Retail sales and data quality
 
