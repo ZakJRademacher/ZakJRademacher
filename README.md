@@ -1,6 +1,6 @@
 # Zak Rademacher
 
-Retail operations manager building practical reporting workflows with **Excel, Power Query, SQL, Python and Power BI**. I turn recurring exports into usable reports, traceable corrections and clear business findings.
+Operations Supervisor at Safeway building practical reporting workflows with **Excel, Power Query, SQL, Python and Power BI**. I turn recurring exports into usable reports, traceable corrections and clear business findings.
 
 Available for **15–20 hours of remote project work per week**. [Work with me on Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17).
 
@@ -29,6 +29,6 @@ Six related source files support a four-page operations report over **99,441 his
 
 ## Background and working approach
 
-Operations Manager at Albertsons, with computer-science college coursework and intermediate Python and SQL skills. I bring an operations perspective to metric definitions, exception handling and practical handoffs.
+Operations Supervisor at Safeway, with computer-science college coursework and intermediate Python and SQL skills. I bring an operations perspective to metric definitions, exception handling and practical handoffs.
 
 My projects preserve source traceability, check totals and document how to rerun the work. These are independent demonstrations using attributed public datasets; source rights and project limitations are documented in each repository.
