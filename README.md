@@ -27,6 +27,8 @@ Six related source files support a four-page operations report over **99,441 his
 
 [Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations): SQL percentile reporting and an exception-review workflow that preserves reviewer notes by complaint ID.
 
+[Perigee — NASA/JPL Asteroid Explorer](https://github.com/ZakJRademacher/perigee-asteroid-tracker): interactive 3D exploration of timestamped Earth-relative positions, selected flyby trajectories and attributed archive imagery, with documented data checks. [Try the live demo](https://perigee.zakjrademacher.workers.dev/).
+
 ## Background and working approach
 
 Operations Supervisor at Safeway, with computer-science college coursework and intermediate Python and SQL skills. I bring an operations perspective to metric definitions, exception handling and practical handoffs.
