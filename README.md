@@ -1,36 +1,69 @@
-# Zak Rademacher
+![Zak Rademacher — reporting, automation and data quality](assets/profile-header.svg)
 
-Operations Supervisor at Safeway building practical reporting workflows with **Excel, Power Query, SQL, Python and Power BI**. I turn recurring exports into usable reports, traceable corrections and clear business findings.
+Operations Supervisor at **Safeway**, building practical reporting workflows with **Excel, Power Query, SQL, Python and Power BI**. My projects focus on usable reports, traceable corrections and clear business findings.
 
 Available for **15–20 hours of remote project work per week**. [Work with me on Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17).
 
-## Featured projects
+### Tools used in these projects
 
-| Business need | Project | Inspect the result |
-|---|---|---|
-| Combine recurring exports and identify corrections | [Excel Export Consolidator](https://github.com/ZakJRademacher/excel-export-consolidator) — a refreshable Power Query workflow with source traceability | [Workbook and sample](https://github.com/ZakJRademacher/excel-export-consolidator#try-the-sample) |
-| Understand a sales change and repeat the monthly review | [Monthly Sales Explorer](https://github.com/ZakJRademacher/monthly-sales-automation) — matched-period comparisons, segment drivers and product follow-ups | [Dashboard preview](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/Monthly%20Sales%20Explorer.pdf) |
-| Build trustworthy metrics from related operational data | [Commerce Operations](https://github.com/ZakJRademacher/commerce-operations-powerbi) — separate order/item facts, reconciled payments and delivery reporting | [Report preview](https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Operations%20Dashboard.pdf) |
+[![Python, SQLite, JavaScript and Git](https://skillicons.dev/icons?i=py,sqlite,js,git&theme=light)](https://github.com/tandpfun/skill-icons)
 
-### Excel consolidation
-Five differently formatted exports become one clean master, a correction queue and file-level totals. The sample reconciles **309 input records = 291 accepted + 10 corrections + 8 skipped repeats**. Routine refresh runs inside Excel.
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square) ![Power Query](https://img.shields.io/badge/Power%20Query-356859?style=flat-square) ![Power BI](https://img.shields.io/badge/Power%20BI-C5A42C?style=flat-square)
 
-### Monthly performance analysis
-A Power BI sales review over **9,800 historical lines across 48 monthly files**. The selected comparison shows sales down **12.6%** while orders rose **33.5%**; category and regional views identify where to investigate. Python/SQL validates inputs before refresh.
+## Selected work
 
-### Commerce data modeling
-Six related source files support a four-page operations report over **99,441 historical orders**. Order and item grains stay separate, payments aggregate before joining, and documented metrics distinguish late-delivery volume from rate.
+Open a preview first, then inspect the source, definitions and checks.
 
-## Additional work
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/ZakJRademacher/excel-export-consolidator">Excel Export Consolidator</a></h3>
+<a href="https://github.com/ZakJRademacher/excel-export-consolidator/blob/main/deliverables/Export%20Consolidator.xlsx"><img src="https://raw.githubusercontent.com/ZakJRademacher/excel-export-consolidator/main/evidence/native-summary.jpg" width="420" alt="Excel workbook summary showing accepted records, corrections and skipped repeats"></a>
+<p>Refreshable Power Query consolidation with source traceability.</p>
+<p><strong>309 inputs</strong> reconciled into accepted records, corrections and skipped repeats.</p>
+<p><sub>Excel · Power Query</sub></p>
+<p><a href="https://github.com/ZakJRademacher/excel-export-consolidator/blob/main/deliverables/Export%20Consolidator.xlsx">Open the workbook →</a> · <a href="https://github.com/ZakJRademacher/excel-export-consolidator">Source &amp; method</a></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/ZakJRademacher/monthly-sales-automation">Monthly Sales Explorer</a></h3>
+<a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/Monthly%20Sales%20Explorer.pdf"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/powerbi-overview.png" width="420" alt="Power BI monthly sales overview with period comparisons and category trends"></a>
+<p>A repeatable monthly sales review with segment and product follow-ups.</p>
+<p><strong>9,800 historical lines</strong> across 48 monthly files, validated with Python and SQL.</p>
+<p><sub>Power BI · Python · SQLite</sub></p>
+<p><a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/Monthly%20Sales%20Explorer.pdf">Preview the report →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-automation">Source &amp; method</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Commerce Operations</a></h3>
+<a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Operations%20Dashboard.pdf"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-operations-powerbi/main/docs/images/dashboard-1.png" width="420" alt="Power BI commerce operations overview of orders, payments and delivery performance"></a>
+<p>Separate order/item facts and reconciled payment and delivery metrics.</p>
+<p><strong>99,441 historical orders</strong> with documented grains, measures and source limitations.</p>
+<p><sub>Power BI · DAX · Python · SQLite</sub></p>
+<p><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Operations%20Dashboard.pdf">Preview the report →</a> · <a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Source &amp; method</a></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/ZakJRademacher/perigee-asteroid-tracker">Perigee · NASA/JPL Explorer</a></h3>
+<a href="https://perigee.zakjrademacher.workers.dev/"><img src="https://raw.githubusercontent.com/ZakJRademacher/perigee-asteroid-tracker/main/docs/images/perigee-viewer.png" width="420" alt="Perigee Earth-centered asteroid viewer with Moon profile and encounter timeline"></a>
+<p>An interactive 3D explorer of timestamped Earth-relative positions and selected trajectories.</p>
+<p>NASA/JPL integrations, attributed archive imagery and documented coordinate checks.</p>
+<p><sub>JavaScript · Three.js · Cloudflare</sub></p>
+<p><a href="https://perigee.zakjrademacher.workers.dev/">Try the live explorer →</a> · <a href="https://github.com/ZakJRademacher/perigee-asteroid-tracker">Source &amp; method</a></p>
+</td>
+</tr>
+</table>
 
-[Retail Sales & Data Quality Audit](https://github.com/ZakJRademacher/retail-sales-data-quality): cleaning decisions, cancellation handling, duplicate sensitivity and exact monetary reconciliation across **541,909 historical transaction lines**.
+## More data work
 
-[Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations): SQL percentile reporting and an exception-review workflow that preserves reviewer notes by complaint ID.
+| Project | What to inspect |
+| --- | --- |
+| [Retail Sales & Data Quality Audit](https://github.com/ZakJRademacher/retail-sales-data-quality) | Cleaning decisions, cancellation handling, duplicate sensitivity and exact monetary reconciliation across **541,909 historical transaction lines**. |
+| [Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations) | SQL percentile reporting and a repeatable exception-review workflow that preserves reviewer notes by complaint ID. |
 
-[Perigee — NASA/JPL Asteroid Explorer](https://github.com/ZakJRademacher/perigee-asteroid-tracker): interactive 3D exploration of timestamped Earth-relative positions, selected flyby trajectories and attributed archive imagery, with documented data checks. [Try the live demo](https://perigee.zakjrademacher.workers.dev/).
+## How I approach the work
 
-## Background and working approach
+- **Define the metric:** identify the row grain, valid population and exceptions before comparing totals.
+- **Make it traceable:** preserve source references, reconciliation checks and rerun instructions.
+- **Deliver something usable:** provide the report, a review queue where needed, and a practical handoff.
 
-Operations Supervisor at Safeway, with computer-science college coursework and intermediate Python and SQL skills. I bring an operations perspective to metric definitions, exception handling and practical handoffs.
-
-My projects preserve source traceability, check totals and document how to rerun the work. These are independent demonstrations using attributed public datasets; source rights and project limitations are documented in each repository.
+My background combines day-to-day operations supervision with computer-science college coursework and ongoing Python and SQL study. These are independent portfolio demonstrations using attributed public datasets; each repository documents its sources, scope and limitations.
