@@ -19,20 +19,20 @@ Start with a business question, then inspect the analysis, data preparation and 
 <table>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/monthly-sales-automation">Monthly Sales Explorer</a></h3>
-<a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/Monthly%20Sales%20Explorer.pdf"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/powerbi-overview.png" width="420" alt="Power BI monthly sales overview with period comparisons and category trends"></a>
+<h3><a href="https://github.com/ZakJRademacher/monthly-sales-automation">Monthly Sales Review</a></h3>
+<a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/tableau-sales-preview.png"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/tableau-sales-preview.png" width="420" alt="Tableau monthly sales decision brief with matched-period category and regional changes"></a>
 <p>Why did sales fall while order counts rose? A matched-period analysis with category, regional and product follow-ups.</p>
 <p><strong>9,800 historical lines</strong> across 48 monthly files, validated with Python and SQL.</p>
-<p><sub>Power BI · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/Monthly%20Sales%20Explorer.pdf">Preview the report →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-automation">Source &amp; method</a></p>
+<p><sub>Tableau · Python · SQLite</sub></p>
+<p><a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/tableau-sales-preview.png">Preview the report →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-automation">Source &amp; method</a></p>
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Commerce Operations</a></h3>
-<a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Operations%20Dashboard.pdf"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-operations-powerbi/main/docs/images/dashboard-1.png" width="420" alt="Power BI commerce operations overview of orders, payments and delivery performance"></a>
+<a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Delivery%20Priorities.pbix"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-operations-powerbi/main/deliverables/delivery-priorities-preview.png" width="420" alt="Power BI commerce operations overview of orders, payments and delivery performance"></a>
 <p>Where should operations investigate late deliveries? Compare affected volume with service rates using separate order/item facts.</p>
 <p><strong>99,441 historical orders</strong> with documented grains, measures and source limitations.</p>
 <p><sub>Power BI · DAX · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Operations%20Dashboard.pdf">Preview the report →</a> · <a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Source &amp; method</a></p>
+<p><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Delivery%20Priorities.pbix">Download the report →</a> · <a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Source &amp; method</a></p>
 </td>
 </tr>
 <tr>
@@ -46,14 +46,16 @@ Start with a business question, then inspect the analysis, data preparation and 
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/retail-sales-data-quality">Retail Data Quality Audit</a></h3>
-<a href="https://github.com/ZakJRademacher/retail-sales-data-quality/blob/main/deliverables/case-study.pdf"><img src="https://raw.githubusercontent.com/ZakJRademacher/retail-sales-data-quality/main/deliverables/portfolio-cover.png" width="420" alt="Retail data-quality audit showing how missing customer IDs and repeated records affect sales reporting"></a>
+<a href="https://github.com/ZakJRademacher/retail-sales-data-quality/blob/main/deliverables/tableau-retail-preview.png"><img src="https://raw.githubusercontent.com/ZakJRademacher/retail-sales-data-quality/main/deliverables/tableau-retail-preview.png" width="420" alt="Retail data-quality audit showing how missing customer IDs and repeated records affect sales reporting"></a>
 <p>How do cleaning decisions change reported sales? Preserve valid sales, distinguish cancellations and quantify duplicate sensitivity.</p>
 <p><strong>541,909 historical transaction lines</strong> with documented assumptions and exact monetary reconciliation.</p>
-<p><sub>Python · SQL · Excel</sub></p>
-<p><a href="https://github.com/ZakJRademacher/retail-sales-data-quality/blob/main/deliverables/case-study.pdf">Read the findings →</a> · <a href="https://github.com/ZakJRademacher/retail-sales-data-quality">Source &amp; method</a></p>
+<p><sub>Tableau · Python · SQL · Excel</sub></p>
+<p><a href="https://github.com/ZakJRademacher/retail-sales-data-quality/blob/main/deliverables/tableau-retail-preview.png">Read the findings →</a> · <a href="https://github.com/ZakJRademacher/retail-sales-data-quality">Source &amp; method</a></p>
 </td>
 </tr>
 </table>
+
+The Tableau briefs are shown as previews; their workbook files remain local. Power BI downloads include imported historical data.
 
 ## Supporting workflows
 
@@ -73,3 +75,4 @@ Start with a business question, then inspect the analysis, data preparation and 
 - **Deliver something usable:** provide the report, a review queue where needed, and a practical handoff.
 
 My background combines day-to-day operations supervision with computer-science college coursework and ongoing Python and SQL study. Tableau is a planned learning goal; a Tableau deliverable is not yet included in this portfolio. These are independent portfolio demonstrations using attributed public or fictional data; each repository documents its sources, scope and limitations.
+
