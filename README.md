@@ -1,6 +1,6 @@
 ![Zak Rademacher — reporting, automation and data quality](assets/profile-header.svg)
 
-Operations Supervisor at **Safeway**, building practical reporting workflows with **Excel, Power Query, SQL, Python and Power BI**. My projects focus on usable reports, traceable corrections and clear business findings.
+Operations Supervisor at **Safeway**, building practical reporting workflows with **Excel, Power Query, SQL, Python and Power BI**. I turn recurring business exports into clean, reconciled data and repeatable operational reports.
 
 Available for **15–20 hours of remote project work per week**. [Work with me on Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17).
 
@@ -12,7 +12,7 @@ Available for **15–20 hours of remote project work per week**. [Work with me o
 
 ## Selected work
 
-Open a preview first, then inspect the source, definitions and checks.
+Start with Excel consolidation, monthly reporting or the commerce model. The intake workbench extends the same focus on traceable data quality.
 
 <table>
 <tr>
@@ -43,12 +43,12 @@ Open a preview first, then inspect the source, definitions and checks.
 <p><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Operations%20Dashboard.pdf">Preview the report →</a> · <a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Source &amp; method</a></p>
 </td>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/perigee-asteroid-tracker">Perigee · NASA/JPL Explorer</a></h3>
-<a href="https://perigee.zakjrademacher.workers.dev/"><img src="https://raw.githubusercontent.com/ZakJRademacher/perigee-asteroid-tracker/main/docs/images/perigee-viewer.png" width="420" alt="Perigee Earth-centered asteroid viewer with Moon profile and encounter timeline"></a>
-<p>An interactive 3D explorer of timestamped Earth-relative positions and selected trajectories.</p>
-<p>NASA/JPL integrations, attributed archive imagery and documented coordinate checks.</p>
-<p><sub>JavaScript · Three.js · Cloudflare</sub></p>
-<p><a href="https://perigee.zakjrademacher.workers.dev/">Try the live explorer →</a> · <a href="https://github.com/ZakJRademacher/perigee-asteroid-tracker">Source &amp; method</a></p>
+<h3><a href="https://github.com/ZakJRademacher/cloud-file-intake">CSV Workbench &amp; Cloud Intake</a></h3>
+<a href="https://github.com/ZakJRademacher/cloud-file-intake/blob/main/docs/WORKBENCH.md"><img src="https://raw.githubusercontent.com/ZakJRademacher/cloud-file-intake/main/evidence/profile-workbench.png" width="420" alt="Local CSV workbench showing saved mapping profiles, validation and reconciliation"></a>
+<p>Combine recurring exports with saved mappings, configurable checks and source traceability.</p>
+<p><strong>9,994 historical rows</strong> checked locally with exact decimal totals. A separate AWS pipeline demonstrates ingestion and safe replay.</p>
+<p><sub>Python · CSV validation · AWS · Terraform</sub></p>
+<p><a href="https://github.com/ZakJRademacher/cloud-file-intake/blob/main/docs/WORKBENCH.md">Workbench guide →</a> · <a href="https://github.com/ZakJRademacher/cloud-file-intake">Source &amp; cloud scope</a></p>
 </td>
 </tr>
 </table>
@@ -57,9 +57,12 @@ Open a preview first, then inspect the source, definitions and checks.
 
 | Project | What to inspect |
 | --- | --- |
-| [Cloud File Intake · AWS](https://github.com/ZakJRademacher/cloud-file-intake) | Private S3 → SQS → Python Lambda pipeline defined in Terraform. Live checks verify output reconciliation, safe replay, source versions and quarantine; includes monitoring and a local demo. |
 | [Retail Sales & Data Quality Audit](https://github.com/ZakJRademacher/retail-sales-data-quality) | Cleaning decisions, cancellation handling, duplicate sensitivity and exact monetary reconciliation across **541,909 historical transaction lines**. |
 | [Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations) | SQL percentile reporting and a repeatable exception-review workflow that preserves reviewer notes by complaint ID. |
+
+## Additional technical project
+
+[**Perigee · NASA/JPL Explorer**](https://perigee.zakjrademacher.workers.dev/) — an interactive scientific-data visualization with timestamped positions, API integrations and documented coordinate checks. [Source & method](https://github.com/ZakJRademacher/perigee-asteroid-tracker).
 
 ## How I approach the work
 
