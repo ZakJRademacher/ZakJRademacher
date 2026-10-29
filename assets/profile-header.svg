@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="290" viewBox="0 0 1200 290" role="img" aria-labelledby="title desc">
   <title id="title">Zak Rademacher — Data analytics portfolio</title>
-  <desc id="desc">Reporting, automation and data quality. A source-to-checks-to-report workflow accompanies the name.</desc>
+  <desc id="desc">Business analysis, reporting and data quality. A source-to-checks-to-report workflow accompanies the name.</desc>
   <rect width="1200" height="290" rx="20" fill="#142d38"/>
   <path d="M780 0v290M840 0v290M900 0v290M960 0v290M1020 0v290M1080 0v290M1140 0v290M760 48h440M760 108h440M760 168h440M760 228h440" stroke="#22424d" stroke-width="1"/>
   <rect x="45" y="43" width="6" height="28" rx="3" fill="#9cceb7"/>
   <g font-family="Segoe UI,Arial,sans-serif">
     <text x="66" y="63" fill="#a8cdbf" font-size="15" letter-spacing="3">DATA ANALYTICS PORTFOLIO</text>
     <text x="45" y="142" fill="#f5f4eb" font-size="55" font-weight="700" letter-spacing="-1.4">Zak Rademacher</text>
-    <text x="48" y="192" fill="#c7d5d6" font-size="23">Reporting · Automation · Data quality</text>
+    <text x="48" y="192" fill="#c7d5d6" font-size="23">Analysis · Reporting · Data quality</text>
     <text x="48" y="247" fill="#93aeb5" font-size="15">Practical workflows. Traceable results.</text>
     <rect x="820" y="48" width="290" height="53" rx="10" fill="#1b3c48" stroke="#3a6470"/>
     <rect x="820" y="118" width="290" height="53" rx="10" fill="#1e4850" stroke="#629788"/>
