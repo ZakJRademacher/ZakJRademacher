@@ -6,7 +6,7 @@ Available for **15–20 hours of remote project work per week**. [Work with me o
 
 ### Tools used in these projects
 
-[![Python, SQLite, JavaScript and Git](https://skillicons.dev/icons?i=py,sqlite,js,git&theme=light)](https://github.com/tandpfun/skill-icons)
+[![Python, SQLite, JavaScript and Git](https://skillicons.dev/icons?i=py,sqlite,js,git,aws,terraform&theme=light)](https://github.com/tandpfun/skill-icons)
 
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square) ![Power Query](https://img.shields.io/badge/Power%20Query-356859?style=flat-square) ![Power BI](https://img.shields.io/badge/Power%20BI-C5A42C?style=flat-square)
 
@@ -57,6 +57,7 @@ Open a preview first, then inspect the source, definitions and checks.
 
 | Project | What to inspect |
 | --- | --- |
+| [Cloud File Intake · AWS](https://github.com/ZakJRademacher/cloud-file-intake) | Private S3 → SQS → Python Lambda pipeline defined in Terraform. Live checks verify output reconciliation, safe replay, source versions and quarantine; includes monitoring and a local demo. |
 | [Retail Sales & Data Quality Audit](https://github.com/ZakJRademacher/retail-sales-data-quality) | Cleaning decisions, cancellation handling, duplicate sensitivity and exact monetary reconciliation across **541,909 historical transaction lines**. |
 | [Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations) | SQL percentile reporting and a repeatable exception-review workflow that preserves reviewer notes by complaint ID. |
 
