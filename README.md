@@ -70,4 +70,4 @@ Start with Excel consolidation, monthly reporting or the commerce model. The int
 - **Make it traceable:** preserve source references, reconciliation checks and rerun instructions.
 - **Deliver something usable:** provide the report, a review queue where needed, and a practical handoff.
 
-My background combines day-to-day operations supervision with computer-science college coursework and ongoing Python and SQL study. These are independent portfolio demonstrations using attributed public datasets; each repository documents its sources, scope and limitations.
+My background combines day-to-day operations supervision with computer-science college coursework and ongoing Python and SQL study. These are independent portfolio demonstrations using attributed public or fictional data; each repository documents its sources, scope and limitations.
