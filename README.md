@@ -10,7 +10,7 @@ Available for **15–20 hours of remote project work per week**. [Work with me o
 
 [![Python, SQLite and Git](https://skillicons.dev/icons?i=py,sqlite,git&theme=light)](https://github.com/tandpfun/skill-icons)
 
-![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square) ![Power Query](https://img.shields.io/badge/Power%20Query-356859?style=flat-square) ![Power BI](https://img.shields.io/badge/Power%20BI-C5A42C?style=flat-square)
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square) ![Power Query](https://img.shields.io/badge/Power%20Query-356859?style=flat-square) ![Power BI](https://img.shields.io/badge/Power%20BI-C5A42C?style=flat-square) ![Tableau](https://img.shields.io/badge/Tableau-147D80?style=flat-square)
 
 ## Selected work
 
