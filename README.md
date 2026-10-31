@@ -1,6 +1,6 @@
 ![Zak Rademacher — data analysis and business reporting](assets/profile-header.svg)
 
-I focus on **data analysis and business reporting with Python, SQL, Excel, Power Query and Power BI**: prepare reliable data, investigate performance changes and explain the findings in a usable report.
+I focus on **data analysis and business reporting with Python, SQL, Excel, Power Query, Power BI and Tableau**: prepare reliable data, investigate performance changes and explain the findings in a usable report.
 
 I work as an Operations Supervisor at **Safeway** and bring an operations perspective to the questions, metrics and follow-up actions.
 
@@ -37,31 +37,36 @@ Start with a business question, then inspect the analysis, data preparation and 
 </tr>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/excel-export-consolidator">Excel Export Consolidator</a></h3>
-<a href="https://github.com/ZakJRademacher/excel-export-consolidator/blob/main/deliverables/Export%20Consolidator.xlsx"><img src="https://raw.githubusercontent.com/ZakJRademacher/excel-export-consolidator/main/evidence/native-summary.jpg" width="420" alt="Excel workbook summary showing accepted records, corrections and skipped repeats"></a>
-<p>Prepare recurring business exports for analysis: one refreshable master, a correction queue and source traceability.</p>
-<p><strong>309 inputs</strong> reconciled into accepted records, corrections and skipped repeats.</p>
-<p><sub>Excel · Power Query</sub></p>
-<p><a href="https://github.com/ZakJRademacher/excel-export-consolidator/blob/main/deliverables/Export%20Consolidator.xlsx">Open the workbook →</a> · <a href="https://github.com/ZakJRademacher/excel-export-consolidator">Source &amp; method</a></p>
+<h3><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Hotel Booking Cancellations</a></h3>
+<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/Hotel%20Cancellation%20Review.twbx"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/dashboard-preview.png" width="420" alt="Hotel Booking Cancellations business decision dashboard"></a>
+<p>Which booking segments create cancellation workload, and where should reservations test better confirmation? Compare counts and rates within the same hotel and period.</p>
+<p><strong>119,390 historical bookings</strong> with documented populations, limitations and reconciliation checks.</p>
+<p><sub>Tableau · Python · SQLite</sub></p>
+<p><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/Hotel%20Cancellation%20Review.twbx">Download the report →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Source &amp; method</a></p>
 </td>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/retail-sales-data-quality">Retail Data Quality Audit</a></h3>
-<a href="https://github.com/ZakJRademacher/retail-sales-data-quality/blob/main/deliverables/tableau-retail-preview.png"><img src="https://raw.githubusercontent.com/ZakJRademacher/retail-sales-data-quality/main/deliverables/tableau-retail-preview.png" width="420" alt="Retail data-quality audit showing how missing customer IDs and repeated records affect sales reporting"></a>
-<p>How do cleaning decisions change reported sales? Preserve valid sales, distinguish cancellations and quantify duplicate sensitivity.</p>
-<p><strong>541,909 historical transaction lines</strong> with documented assumptions and exact monetary reconciliation.</p>
-<p><sub>Tableau · Python · SQL · Excel</sub></p>
-<p><a href="https://github.com/ZakJRademacher/retail-sales-data-quality/blob/main/deliverables/tableau-retail-preview.png">Read the findings →</a> · <a href="https://github.com/ZakJRademacher/retail-sales-data-quality">Source &amp; method</a></p>
+<h3><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Marketing Campaign Performance</a></h3>
+<a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/deliverables/Marketing%20Campaign%20Review.pbix"><img src="https://raw.githubusercontent.com/ZakJRademacher/marketing-campaign-performance/main/deliverables/dashboard-preview.png" width="420" alt="Marketing Campaign Performance business decision dashboard"></a>
+<p>Which contact-history groups warrant a follow-up experiment? Compare observed subscriptions with recorded contact workload; distinguish association from lift.</p>
+<p><strong>41,188 historical campaign records</strong> with documented populations, limitations and reconciliation checks.</p>
+<p><sub>Power BI · DAX · Python · SQLite</sub></p>
+<p><a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/deliverables/Marketing%20Campaign%20Review.pbix">Download the report →</a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Source &amp; method</a></p>
 </td>
 </tr>
 </table>
 
-The Tableau briefs are shown as previews; their workbook files remain local. Power BI downloads include imported historical data.
+Download native Tableau workbooks and imported-data Power BI reports from the repositories. These are local historical analyses; Tableau Public and scheduled cloud refresh are not configured.
+
+## Repeatable Excel workflow
+
+[**Excel Export Consolidator**](https://github.com/ZakJRademacher/excel-export-consolidator) — a Power Query master, correction queue and source traceability. The sample reconciles 309 inputs into 291 accepted records, 10 corrections and 8 skipped repeats.
 
 ## Supporting workflows
 
 | Project | What to inspect |
 | --- | --- |
 | [CSV Workbench & Cloud Intake](https://github.com/ZakJRademacher/cloud-file-intake) | Configurable local CSV preparation and validation; a separate AWS pipeline demonstrates ingestion and replay. Supporting engineering work, with local/cloud contracts documented. |
+| [Retail Data Quality](https://github.com/ZakJRademacher/retail-sales-data-quality) | Supporting audit of cleaning-policy sensitivity and sales reconciliation. |
 | [Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations) | SQL percentile reporting and a repeatable exception-review workflow that preserves reviewer notes by complaint ID. |
 
 ## Additional technical project
@@ -74,5 +79,5 @@ The Tableau briefs are shown as previews; their workbook files remain local. Pow
 - **Make it traceable:** preserve source references, reconciliation checks and rerun instructions.
 - **Deliver something usable:** provide the report, a review queue where needed, and a practical handoff.
 
-My background combines day-to-day operations supervision with computer-science college coursework and ongoing Python and SQL study. Tableau is a planned learning goal; a Tableau deliverable is not yet included in this portfolio. These are independent portfolio demonstrations using attributed public or fictional data; each repository documents its sources, scope and limitations.
+My background combines day-to-day operations supervision with computer-science college coursework and ongoing Python and SQL study. These are independent portfolio demonstrations using attributed public or fictional data; each repository documents its sources, scope and limitations.
 
