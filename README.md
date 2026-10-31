@@ -57,9 +57,11 @@ Start with a business question, then inspect the analysis, data preparation and 
 
 Download native Tableau workbooks and imported-data Power BI reports from the repositories. These are local historical analyses; Tableau Public and scheduled cloud refresh are not configured.
 
-## Repeatable Excel workflow
+## Repeatable data preparation
 
-[**Excel Export Consolidator**](https://github.com/ZakJRademacher/excel-export-consolidator) — a Power Query master, correction queue and source traceability. The sample reconciles 309 inputs into 291 accepted records, 10 corrections and 8 skipped repeats.
+[**Data Workbench**](https://github.com/ZakJRademacher/data-workbench) — local CSV/Excel cleaning with saved rules, review decisions, guarded joins and traceable exports. Version 2 matches the original 309-record Excel result exactly and passes independent checks on three public sources and two Kaggle datasets.
+
+[Download the local app](https://github.com/ZakJRademacher/data-workbench/raw/refs/heads/main/deliverables/Data-Workbench-2.0.0.zip) · [Verified comparison and limits](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/COMPARISON.md). The [original Excel workbook](https://github.com/ZakJRademacher/excel-export-consolidator) remains available for its native Power Query workflow.
 
 ## Supporting workflows
 
