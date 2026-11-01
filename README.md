@@ -1,78 +1,74 @@
 ![Zak Rademacher — data analysis and business reporting](assets/profile-header.svg)
 
-I prepare reliable data and build repeatable operational reports using **Python, SQL, Excel, Power Query and Power BI**. My portfolio also includes Tableau investigations, source-to-report reconciliation and clear handoff instructions.
+I work with business data: cleaning up exports, checking the numbers, and building reports that make the next question easier to answer. My projects use **Python, SQL, Excel, Power Query, Power BI and Tableau**.
 
-I work as an **Operations Supervisor at Safeway** and bring an operations perspective to business questions, metrics and follow-up actions.
+I'm an **Operations Supervisor at Safeway**. That day-to-day work shapes the questions I bring to analysis, especially around workload, service, and recurring reporting.
 
 Available for **15–20 hours of remote project work per week**. [Work with me on Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17).
 
 ## Selected analysis projects
 
-These four investigations start with a business question and supported finding, followed by the report, analysis and checks. They use attributed historical public data and document their limits.
+These projects look at sales, delivery performance, hotel cancellations, and marketing campaigns. Each includes a report, the analysis behind it, and instructions for working with the data. All four use historical public datasets.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/monthly-sales-automation">Monthly Sales Review</a></h3>
-<a href="https://github.com/ZakJRademacher/monthly-sales-automation"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/tableau-sales-preview.png" width="420" alt="Monthly Sales Review: current report or workspace preview"></a>
-<p>Why did sales fall while orders rose? Matched December sales fell 12.6% as orders rose 33.5%; source-level follow-ups separate arithmetic from cause.</p>
-<p><sub>Tableau · Python · SQLite · Power BI</sub></p>
-<p><a href="https://github.com/ZakJRademacher/monthly-sales-automation">Report &amp; reproduce →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/sql/review_drivers.sql">Inspect the analysis</a></p>
+<a href="https://github.com/ZakJRademacher/monthly-sales-automation"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/tableau-sales-preview.png" width="420" alt="Tableau report comparing December sales and orders"></a>
+<p>Sales fell 12.6% even as orders rose 33.5%. I compared the same December dates in both years, then traced the change through categories, regions, and products.</p>
+<p><sub>Tableau · Python · SQL</sub></p>
+<p><a href="https://github.com/ZakJRademacher/monthly-sales-automation">View project →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/sql/review_drivers.sql">Inspect the analysis</a></p>
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Commerce Operations</a></h3>
-<a href="https://github.com/ZakJRademacher/commerce-operations-powerbi"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-operations-powerbi/main/deliverables/delivery-priorities-preview.png" width="420" alt="Commerce Operations: current report or workspace preview"></a>
-<p>Where should delivery operations investigate? Compare 6,534 late deliveries with eligible populations; inspect a safe-join SQL investigation and monthly rankings.</p>
+<a href="https://github.com/ZakJRademacher/commerce-operations-powerbi"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-operations-powerbi/main/deliverables/delivery-priorities-preview.png" width="420" alt="Power BI report comparing late deliveries by destination state"></a>
+<p>A delivery review across 99,441 orders. I compared late-delivery counts with rates to show where a large workload and a high rate point to different priorities.</p>
 <p><sub>Power BI · DAX · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Report &amp; reproduce →</a> · <a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/docs/SQL_INVESTIGATION.md">Inspect the analysis</a></p>
+<p><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">View project →</a> · <a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/docs/SQL_INVESTIGATION.md">Inspect the analysis</a></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Hotel Booking Cancellations</a></h3>
-<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/dashboard-preview.png" width="420" alt="Hotel Booking Cancellations: current report or workspace preview"></a>
-<p>In 2016 City Hotel records, Online TA creates the most cancellation workload while Groups has the higher rate. Compare like populations before proposing a confirmation trial.</p>
+<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/dashboard-preview.png" width="420" alt="Tableau report showing booking cancellations by segment"></a>
+<p>Online travel agents accounted for the most cancellations at the City Hotel in 2016, while group bookings had a higher cancellation rate. The Tableau report makes that distinction visible.</p>
 <p><sub>Tableau · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Report &amp; reproduce →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/docs/DECISION_MEMO.md">Inspect the analysis</a></p>
+<p><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">View project →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/docs/DECISION_MEMO.md">Inspect the analysis</a></p>
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Marketing Campaign Performance</a></h3>
-<a href="https://github.com/ZakJRademacher/marketing-campaign-performance"><img src="https://raw.githubusercontent.com/ZakJRademacher/marketing-campaign-performance/main/deliverables/dashboard-preview.png" width="420" alt="Marketing Campaign Performance: current report or workspace preview"></a>
-<p>Reconcile 41,188 historical observations; compare prior outcomes within month/channel cells and inspect a prospective experiment design without claiming causal lift.</p>
+<a href="https://github.com/ZakJRademacher/marketing-campaign-performance"><img src="https://raw.githubusercontent.com/ZakJRademacher/marketing-campaign-performance/main/deliverables/dashboard-preview.png" width="420" alt="Power BI report showing subscriptions and contact workload"></a>
+<p>A review of 41,188 campaign records, looking at subscriptions and contact workload. I compared prior outcomes within the same month and channel, then outlined a follow-up experiment.</p>
 <p><sub>Power BI · DAX · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Report &amp; reproduce →</a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/docs/OUTCOME_COMPARISON.md">Inspect the analysis</a></p>
+<p><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">View project →</a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/docs/OUTCOME_COMPARISON.md">Inspect the analysis</a></p>
 </td>
 </tr>
 </table>
 
-The Tableau Sales brief is a fixed historical review; the Hotel workbook and Power BI reports provide documented filtering. Native packages include reporting data. Current previews are readable without installation; no Tableau Public or scheduled cloud BI refresh is configured. Earlier layouts remain labeled in the project guides/history. Motion covers are separate presentation assets.
+You can view the previews here or download the reports from each project. The project guides explain filters, definitions, and refresh steps.
 
 ## Repeatable data preparation
 
 ### [Data Workbench](https://github.com/ZakJRademacher/data-workbench)
 
-A local CSV/XLSX preparation application with saved rules, review decisions, guarded joins and traceable exports. The fictional demo reconciles **20 records into 14 accepted and six for review**, with the two output populations kept separate.
+A local app for combining CSV and Excel exports, reviewing questionable records, and joining related tables without multiplying totals. Saved rules and source references make the next run easier to check.
 
 <a href="https://github.com/ZakJRademacher/data-workbench"><img src="https://raw.githubusercontent.com/ZakJRademacher/data-workbench/main/docs/images/review-2.0.1.png" width="560" alt="Data Workbench review workspace with preparation rules and review decisions"></a>
 
 [Download the local app](https://github.com/ZakJRademacher/data-workbench/raw/refs/heads/main/deliverables/Data-Workbench-2.0.1.zip) · [Operating guide](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/OPERATING_GUIDE.md) · [Verified comparison and limits](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/COMPARISON.md).
 
-Workbench 2.0.1 preserves the documented 309-record compatibility case. Historical external benchmarks identify version 2.0.0; presentation, regression and installation checks are recorded separately. These examples demonstrate bounded preparation workflows with explicit source and precision limits.
-
 ## Additional technical project
 
-[**Perigee — NASA/JPL Explorer**](https://perigee.zakjrademacher.workers.dev/) is an additional scientific-data visualization and API project with Earth-relative positions, selected flyby trajectories and documented coordinate checks. [Source and current methodology](https://github.com/ZakJRademacher/perigee-asteroid-tracker).
+[**Perigee — NASA/JPL Explorer**](https://perigee.zakjrademacher.workers.dev/) lets you explore asteroid encounters using NASA/JPL data, with a 3D view, a shared timeline, and predicted flyby paths. [Source and methodology](https://github.com/ZakJRademacher/perigee-asteroid-tracker).
 
 ## How I approach the work
 
-- **Define the metric:** establish row grain, valid populations and exceptions before comparison.
-- **Investigate and explain:** reconcile totals, inspect alternative explanations and state what the source cannot establish.
-- **Deliver a usable handoff:** preserve source references, review decisions, repeat instructions and acceptance checks.
+I start with the question the report needs to answer and make sure the figures mean what they appear to mean. That includes checking how records join, which observations belong in a comparison, and whether totals agree with the source.
 
-[Sales practice](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/docs/INDEPENDENT_PRACTICE.md) · [Commerce SQL practice](https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/docs/INDEPENDENT_PRACTICE.md). These are exercises to complete, not claims that independent proficiency has been assessed.
+From there, I look for findings worth following up and explain what the data can support. I also include the steps needed to refresh the work, review exceptions, and trace a result back to its records.
 
 ## Supporting work
 
-[Retail data-quality judgment](https://github.com/ZakJRademacher/retail-sales-data-quality) · [Complaint intake and persistent notes](https://github.com/ZakJRademacher/complaint-intake-operations) · [Cloud File Intake](https://github.com/ZakJRademacher/cloud-file-intake). These supporting projects retain their separate contracts and source limitations.
+[Retail data-quality judgment](https://github.com/ZakJRademacher/retail-sales-data-quality) · [Complaint intake and persistent notes](https://github.com/ZakJRademacher/complaint-intake-operations) · [Cloud File Intake](https://github.com/ZakJRademacher/cloud-file-intake). Each explores a different part of preparing data or maintaining recurring reports.
 
-My background combines day-to-day operations supervision, computer-science college coursework and ongoing Python/SQL study. Tool labels describe the implementations; experience and proficiency require their own evidence.
+My background includes operations supervision, computer-science coursework, and ongoing Python and SQL study.
