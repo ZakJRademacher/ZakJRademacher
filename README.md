@@ -38,11 +38,11 @@ Start with a business question, then inspect the analysis, data preparation and 
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Hotel Booking Cancellations</a></h3>
-<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/Hotel%20Cancellation%20Review.twbx"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/portfolio-cover-wide.png" width="420" alt="Current hotel booking cancellation analysis presentation"></a>
+<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/dashboard-preview.png"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/portfolio-cover-wide.png" width="420" alt="Current hotel booking cancellation analysis presentation"></a>
 <p>Which booking segments create cancellation workload, and where should reservations test better confirmation? Compare counts and rates within the same hotel and period.</p>
 <p><strong>119,390 historical bookings</strong> with documented populations, limitations and reconciliation checks.</p>
 <p><sub>Tableau · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/Hotel%20Cancellation%20Review.twbx">Download the report →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Source &amp; method</a></p>
+<p><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/dashboard-preview.png">Preview the report →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Source &amp; method</a></p>
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Marketing Campaign Performance</a></h3>
@@ -55,7 +55,7 @@ Start with a business question, then inspect the analysis, data preparation and 
 </tr>
 </table>
 
-Download native Tableau workbooks and imported-data Power BI reports from the repositories. These are local historical analyses; Tableau Public and scheduled cloud refresh are not configured.
+Preview the current Tableau dashboards and download imported-data Power BI reports from the repositories. Redesigned Tableau workbooks remain local; historical workbook links are preserved in the project guides. These are local historical analyses; Tableau Public and scheduled cloud refresh are not configured.
 
 ## Repeatable data preparation
 
