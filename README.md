@@ -6,9 +6,9 @@ I work as an **Operations Supervisor at Safeway** and bring an operations perspe
 
 Available for **15–20 hours of remote project work per week**. [Work with me on Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17).
 
-## Selected work
+## Selected analysis projects
 
-Start with the question and finding, then inspect the actual report, analysis and checks. These are independent demonstrations using attributed public or fictional data; no client outcome or unaided mastery is implied.
+These four investigations start with a business question and supported finding, followed by the report, analysis and checks. They use attributed historical public data and document their limits.
 
 <table>
 <tr>
@@ -29,21 +29,12 @@ Start with the question and finding, then inspect the actual report, analysis an
 </tr>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/excel-export-consolidator">Excel Export Consolidator</a></h3>
-<a href="https://github.com/ZakJRademacher/excel-export-consolidator"><img src="https://raw.githubusercontent.com/ZakJRademacher/excel-export-consolidator/main/evidence/native-summary.jpg" width="420" alt="Excel Export Consolidator: current report or workspace preview"></a>
-<p>Combine known-format exports inside native Excel/Power Query: 309 records reconcile to 291 accepted, 10 corrections and eight skipped repeats.</p>
-<p><sub>Excel · Power Query · Python reference</sub></p>
-<p><a href="https://github.com/ZakJRademacher/excel-export-consolidator">Report &amp; reproduce →</a> · <a href="https://github.com/ZakJRademacher/excel-export-consolidator/tree/main/power-query">Inspect the analysis</a></p>
-</td>
-<td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Hotel Booking Cancellations</a></h3>
 <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/dashboard-preview.png" width="420" alt="Hotel Booking Cancellations: current report or workspace preview"></a>
 <p>In 2016 City Hotel records, Online TA creates the most cancellation workload while Groups has the higher rate. Compare like populations before proposing a confirmation trial.</p>
 <p><sub>Tableau · Python · SQLite</sub></p>
 <p><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Report &amp; reproduce →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/docs/DECISION_MEMO.md">Inspect the analysis</a></p>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Marketing Campaign Performance</a></h3>
 <a href="https://github.com/ZakJRademacher/marketing-campaign-performance"><img src="https://raw.githubusercontent.com/ZakJRademacher/marketing-campaign-performance/main/deliverables/dashboard-preview.png" width="420" alt="Marketing Campaign Performance: current report or workspace preview"></a>
@@ -51,17 +42,26 @@ Start with the question and finding, then inspect the actual report, analysis an
 <p><sub>Power BI · DAX · Python · SQLite</sub></p>
 <p><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Report &amp; reproduce →</a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/docs/OUTCOME_COMPARISON.md">Inspect the analysis</a></p>
 </td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/data-workbench">Data Workbench</a></h3>
-<a href="https://github.com/ZakJRademacher/data-workbench"><img src="https://raw.githubusercontent.com/ZakJRademacher/data-workbench/main/docs/images/review-2.0.1.png" width="420" alt="Data Workbench: current report or workspace preview"></a>
-<p>Local CSV/XLSX preparation with saved rules, review decisions and guarded joins. The fictional demo reconciles 20 records into 14 accepted and six for review.</p>
-<p><sub>Python · DuckDB · CSV/XLSX</sub></p>
-<p><a href="https://github.com/ZakJRademacher/data-workbench">Report &amp; reproduce →</a> · <a href="https://github.com/ZakJRademacher/data-workbench/blob/main/docs/OPERATING_GUIDE.md">Inspect the analysis</a></p>
-</td>
 </tr>
 </table>
 
 The Tableau Sales brief is a fixed historical review; the Hotel workbook and Power BI reports provide documented filtering. Native packages include reporting data. Current previews are readable without installation; no Tableau Public or scheduled cloud BI refresh is configured. Earlier layouts remain labeled in the project guides/history. Motion covers are separate presentation assets.
+
+## Repeatable data preparation
+
+### [Data Workbench](https://github.com/ZakJRademacher/data-workbench)
+
+A local CSV/XLSX preparation application with saved rules, review decisions, guarded joins and traceable exports. The fictional demo reconciles **20 records into 14 accepted and six for review**, with the two output populations kept separate.
+
+<a href="https://github.com/ZakJRademacher/data-workbench"><img src="https://raw.githubusercontent.com/ZakJRademacher/data-workbench/main/docs/images/review-2.0.1.png" width="560" alt="Data Workbench review workspace with preparation rules and review decisions"></a>
+
+[Download the local app](https://github.com/ZakJRademacher/data-workbench/raw/refs/heads/main/deliverables/Data-Workbench-2.0.1.zip) · [Operating guide](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/OPERATING_GUIDE.md) · [Verified comparison and limits](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/COMPARISON.md).
+
+Workbench 2.0.1 preserves the documented 309-record compatibility case. Historical external benchmarks identify version 2.0.0; presentation, regression and installation checks are recorded separately. These examples demonstrate bounded preparation workflows with explicit source and precision limits.
+
+## Additional technical project
+
+[**Perigee — NASA/JPL Explorer**](https://perigee.zakjrademacher.workers.dev/) is an additional scientific-data visualization and API project with Earth-relative positions, selected flyby trajectories and documented coordinate checks. [Source and current methodology](https://github.com/ZakJRademacher/perigee-asteroid-tracker).
 
 ## How I approach the work
 
@@ -69,14 +69,10 @@ The Tableau Sales brief is a fixed historical review; the Hotel workbook and Pow
 - **Investigate and explain:** reconcile totals, inspect alternative explanations and state what the source cannot establish.
 - **Deliver a usable handoff:** preserve source references, review decisions, repeat instructions and acceptance checks.
 
-[Sales practice](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/docs/INDEPENDENT_PRACTICE.md) · [Commerce SQL practice](https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/docs/INDEPENDENT_PRACTICE.md) · [Excel practice](https://github.com/ZakJRademacher/excel-export-consolidator/blob/main/docs/INDEPENDENT_PRACTICE.md). These are exercises to complete, not claims that independent proficiency has been assessed.
+[Sales practice](https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/docs/INDEPENDENT_PRACTICE.md) · [Commerce SQL practice](https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/docs/INDEPENDENT_PRACTICE.md). These are exercises to complete, not claims that independent proficiency has been assessed.
 
-## Preparation evidence and supporting work
-
-Workbench 2.0.1 preserves the documented 309-record Excel compatibility case. Historical external benchmarks identify version 2.0.0; the presentation release has separate regression and installation checks. [Comparison and limits](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/COMPARISON.md).
+## Supporting work
 
 [Retail data-quality judgment](https://github.com/ZakJRademacher/retail-sales-data-quality) · [Complaint intake and persistent notes](https://github.com/ZakJRademacher/complaint-intake-operations) · [Cloud File Intake](https://github.com/ZakJRademacher/cloud-file-intake). These supporting projects retain their separate contracts and source limitations.
-
-[**Perigee — NASA/JPL explorer**](https://perigee.zakjrademacher.workers.dev/) is an additional scientific-data visualization and API project. [Source and current methodology](https://github.com/ZakJRademacher/perigee-asteroid-tracker).
 
 My background combines day-to-day operations supervision, computer-science college coursework and ongoing Python/SQL study. Tool labels describe the implementations; experience and proficiency require their own evidence.
