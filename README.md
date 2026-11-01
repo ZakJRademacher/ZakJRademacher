@@ -14,14 +14,14 @@ These projects look at sales, delivery performance, hotel cancellations, and mar
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/monthly-sales-automation">Monthly Sales Review</a></h3>
-<a href="https://github.com/ZakJRademacher/monthly-sales-automation"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/tableau-sales-preview.png" width="420" alt="Tableau report comparing December sales and orders"></a>
+<a href="https://github.com/ZakJRademacher/monthly-sales-automation"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/portfolio-cover.png" width="420" alt="Tableau report comparing December sales and orders"></a>
 <p>Sales fell 12.6% even as orders rose 33.5%. I compared the same December dates in both years, then traced the change through categories, regions, and products.</p>
 <p><sub>Tableau · Python · SQL</sub></p>
 <p><a href="https://github.com/ZakJRademacher/monthly-sales-automation">View project →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/sql/review_drivers.sql">Inspect the analysis</a></p>
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Commerce Operations</a></h3>
-<a href="https://github.com/ZakJRademacher/commerce-operations-powerbi"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-operations-powerbi/main/deliverables/delivery-priorities-preview.png" width="420" alt="Power BI report comparing late deliveries by destination state"></a>
+<a href="https://github.com/ZakJRademacher/commerce-operations-powerbi"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-operations-powerbi/main/deliverables/portfolio-cover.png" width="420" alt="Power BI report comparing late deliveries by destination state"></a>
 <p>A delivery review across 99,441 orders. I compared late-delivery counts with rates to show where a large workload and a high rate point to different priorities.</p>
 <p><sub>Power BI · DAX · Python · SQLite</sub></p>
 <p><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">View project →</a> · <a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/docs/SQL_INVESTIGATION.md">Inspect the analysis</a></p>
@@ -30,14 +30,14 @@ These projects look at sales, delivery performance, hotel cancellations, and mar
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Hotel Booking Cancellations</a></h3>
-<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/dashboard-preview.png" width="420" alt="Tableau report showing booking cancellations by segment"></a>
+<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/portfolio-cover.png" width="420" alt="Tableau report showing booking cancellations by segment"></a>
 <p>Online travel agents accounted for the most cancellations at the City Hotel in 2016, while group bookings had a higher cancellation rate. The Tableau report makes that distinction visible.</p>
 <p><sub>Tableau · Python · SQLite</sub></p>
 <p><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">View project →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/docs/DECISION_MEMO.md">Inspect the analysis</a></p>
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Marketing Campaign Performance</a></h3>
-<a href="https://github.com/ZakJRademacher/marketing-campaign-performance"><img src="https://raw.githubusercontent.com/ZakJRademacher/marketing-campaign-performance/main/deliverables/dashboard-preview.png" width="420" alt="Power BI report showing subscriptions and contact workload"></a>
+<a href="https://github.com/ZakJRademacher/marketing-campaign-performance"><img src="https://raw.githubusercontent.com/ZakJRademacher/marketing-campaign-performance/main/deliverables/portfolio-cover.png" width="420" alt="Power BI report showing subscriptions and contact workload"></a>
 <p>A review of 41,188 campaign records, looking at subscriptions and contact workload. I compared prior outcomes within the same month and channel, then outlined a follow-up experiment.</p>
 <p><sub>Power BI · DAX · Python · SQLite</sub></p>
 <p><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">View project →</a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/docs/OUTCOME_COMPARISON.md">Inspect the analysis</a></p>
@@ -53,13 +53,15 @@ You can view the previews here or download the reports from each project. The pr
 
 A local app for combining CSV and Excel exports, reviewing questionable records, and joining related tables without multiplying totals. Saved rules and source references make the next run easier to check.
 
-<a href="https://github.com/ZakJRademacher/data-workbench"><img src="https://raw.githubusercontent.com/ZakJRademacher/data-workbench/main/docs/images/review-2.0.1.png" width="560" alt="Data Workbench review workspace with preparation rules and review decisions"></a>
+<a href="https://github.com/ZakJRademacher/data-workbench"><img src="https://raw.githubusercontent.com/ZakJRademacher/data-workbench/main/deliverables/portfolio-cover.png" width="560" alt="Data Workbench review workspace with preparation rules and review decisions"></a>
 
 [Download the local app](https://github.com/ZakJRademacher/data-workbench/raw/refs/heads/main/deliverables/Data-Workbench-2.0.1.zip) · [Operating guide](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/OPERATING_GUIDE.md) · [Verified comparison and limits](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/COMPARISON.md).
 
 ## Additional technical project
 
 [**Perigee — NASA/JPL Explorer**](https://perigee.zakjrademacher.workers.dev/) lets you explore asteroid encounters using NASA/JPL data, with a 3D view, a shared timeline, and predicted flyby paths. [Source and methodology](https://github.com/ZakJRademacher/perigee-asteroid-tracker).
+
+<a href="https://perigee.zakjrademacher.workers.dev/"><img src="https://raw.githubusercontent.com/ZakJRademacher/perigee-asteroid-tracker/main/deliverables/portfolio-cover.png" width="560" alt="Perigee NASA/JPL explorer, shown in its labeled 2D schematic view"></a>
 
 ## How I approach the work
 
