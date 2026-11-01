@@ -65,14 +65,6 @@ Download native Tableau workbooks and imported-data Power BI reports from the re
 
 [Download the local app](https://github.com/ZakJRademacher/data-workbench/raw/refs/heads/main/deliverables/Data-Workbench-2.0.1.zip) · [Verified comparison and limits](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/COMPARISON.md). The [original Excel workbook](https://github.com/ZakJRademacher/excel-export-consolidator) remains available for its native Power Query workflow.
 
-## Supporting workflows
-
-| Project | What to inspect |
-| --- | --- |
-| [CSV Workbench & Cloud Intake](https://github.com/ZakJRademacher/cloud-file-intake)<br><img src="https://raw.githubusercontent.com/ZakJRademacher/cloud-file-intake/main/deliverables/portfolio-cover-wide.png" width="300" alt="CSV Workbench & Cloud Intake current presentation"> | Configurable local CSV preparation and validation; a separate AWS pipeline demonstrates ingestion and replay. Supporting engineering work, with local/cloud contracts documented. |
-| [Retail Data Quality](https://github.com/ZakJRademacher/retail-sales-data-quality)<br><img src="https://raw.githubusercontent.com/ZakJRademacher/retail-sales-data-quality/main/deliverables/portfolio-cover-wide.png" width="300" alt="Retail Data Quality current presentation"> | Supporting audit of cleaning-policy sensitivity and sales reconciliation. |
-| [Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations)<br><img src="https://raw.githubusercontent.com/ZakJRademacher/complaint-intake-operations/main/deliverables/portfolio-cover-wide.png" width="300" alt="Complaint Intake Operations current presentation"> | SQL percentile reporting and a repeatable exception-review workflow that preserves reviewer notes by complaint ID. |
-
 ## Additional technical project
 
 [![Perigee — near-Earth observatory](https://raw.githubusercontent.com/ZakJRademacher/perigee-asteroid-tracker/main/deliverables/portfolio-cover-wide.png)](https://perigee.zakjrademacher.workers.dev/)
