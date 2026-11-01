@@ -20,7 +20,7 @@ Start with a business question, then inspect the analysis, data preparation and 
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/monthly-sales-automation">Monthly Sales Review</a></h3>
-<a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/tableau-sales-preview.png"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/tableau-sales-preview.png" width="420" alt="Tableau monthly sales decision brief with matched-period category and regional changes"></a>
+<a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/tableau-sales-preview.png"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/portfolio-cover-wide.png" width="420" alt="Current monthly sales automation presentation"></a>
 <p>Why did sales fall while order counts rose? A matched-period analysis with category, regional and product follow-ups.</p>
 <p><strong>9,800 historical lines</strong> across 48 monthly files, validated with Python and SQL.</p>
 <p><sub>Tableau · Python · SQLite</sub></p>
@@ -28,7 +28,7 @@ Start with a business question, then inspect the analysis, data preparation and 
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Commerce Operations</a></h3>
-<a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Delivery%20Priorities.pbix"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-operations-powerbi/main/deliverables/delivery-priorities-preview.png" width="420" alt="Power BI commerce operations overview of orders, payments and delivery performance"></a>
+<a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/deliverables/Commerce%20Delivery%20Priorities.pbix"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-operations-powerbi/main/deliverables/portfolio-cover-wide.png" width="420" alt="Current commerce operations powerbi presentation"></a>
 <p>Where should operations investigate late deliveries? Compare affected volume with service rates using separate order/item facts.</p>
 <p><strong>99,441 historical orders</strong> with documented grains, measures and source limitations.</p>
 <p><sub>Power BI · DAX · Python · SQLite</sub></p>
@@ -38,7 +38,7 @@ Start with a business question, then inspect the analysis, data preparation and 
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Hotel Booking Cancellations</a></h3>
-<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/Hotel%20Cancellation%20Review.twbx"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/dashboard-preview.png" width="420" alt="Hotel Booking Cancellations business decision dashboard"></a>
+<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/Hotel%20Cancellation%20Review.twbx"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/portfolio-cover-wide.png" width="420" alt="Current hotel booking cancellation analysis presentation"></a>
 <p>Which booking segments create cancellation workload, and where should reservations test better confirmation? Compare counts and rates within the same hotel and period.</p>
 <p><strong>119,390 historical bookings</strong> with documented populations, limitations and reconciliation checks.</p>
 <p><sub>Tableau · Python · SQLite</sub></p>
@@ -46,7 +46,7 @@ Start with a business question, then inspect the analysis, data preparation and 
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Marketing Campaign Performance</a></h3>
-<a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/deliverables/Marketing%20Campaign%20Review.pbix"><img src="https://raw.githubusercontent.com/ZakJRademacher/marketing-campaign-performance/main/deliverables/dashboard-preview.png" width="420" alt="Marketing Campaign Performance business decision dashboard"></a>
+<a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/deliverables/Marketing%20Campaign%20Review.pbix"><img src="https://raw.githubusercontent.com/ZakJRademacher/marketing-campaign-performance/main/deliverables/portfolio-cover-wide.png" width="420" alt="Current marketing campaign performance presentation"></a>
 <p>Which contact-history groups warrant a follow-up experiment? Compare observed subscriptions with recorded contact workload; distinguish association from lift.</p>
 <p><strong>41,188 historical campaign records</strong> with documented populations, limitations and reconciliation checks.</p>
 <p><sub>Power BI · DAX · Python · SQLite</sub></p>
@@ -59,21 +59,27 @@ Download native Tableau workbooks and imported-data Power BI reports from the re
 
 ## Repeatable data preparation
 
-[**Data Workbench**](https://github.com/ZakJRademacher/data-workbench) — local CSV/Excel cleaning with saved rules, review decisions, guarded joins and traceable exports. Version 2 matches the original 309-record Excel result exactly and passes independent checks on three public sources and two Kaggle datasets.
+[![Data Workbench — reviewed, reproducible tables](https://raw.githubusercontent.com/ZakJRademacher/data-workbench/main/deliverables/portfolio-cover-wide.png)](https://github.com/ZakJRademacher/data-workbench)
 
-[Download the local app](https://github.com/ZakJRademacher/data-workbench/raw/refs/heads/main/deliverables/Data-Workbench-2.0.0.zip) · [Verified comparison and limits](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/COMPARISON.md). The [original Excel workbook](https://github.com/ZakJRademacher/excel-export-consolidator) remains available for its native Power Query workflow.
+[**Data Workbench**](https://github.com/ZakJRademacher/data-workbench) — local CSV/Excel cleaning with saved rules, review decisions, guarded joins and traceable exports. Version 2.0.1 retains exact parity with the original 309-record Excel fixture. Historical independent benchmarks cover three public sources and two Kaggle datasets; those benchmarks were run against 2.0.0. The presentation release preserves the processing engine and has separate regression, browser and clean-install checks.
+
+[Download the local app](https://github.com/ZakJRademacher/data-workbench/raw/refs/heads/main/deliverables/Data-Workbench-2.0.1.zip) · [Verified comparison and limits](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/COMPARISON.md). The [original Excel workbook](https://github.com/ZakJRademacher/excel-export-consolidator) remains available for its native Power Query workflow.
 
 ## Supporting workflows
 
 | Project | What to inspect |
 | --- | --- |
-| [CSV Workbench & Cloud Intake](https://github.com/ZakJRademacher/cloud-file-intake) | Configurable local CSV preparation and validation; a separate AWS pipeline demonstrates ingestion and replay. Supporting engineering work, with local/cloud contracts documented. |
-| [Retail Data Quality](https://github.com/ZakJRademacher/retail-sales-data-quality) | Supporting audit of cleaning-policy sensitivity and sales reconciliation. |
-| [Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations) | SQL percentile reporting and a repeatable exception-review workflow that preserves reviewer notes by complaint ID. |
+| [CSV Workbench & Cloud Intake](https://github.com/ZakJRademacher/cloud-file-intake)<br><img src="https://raw.githubusercontent.com/ZakJRademacher/cloud-file-intake/main/deliverables/portfolio-cover-wide.png" width="300" alt="CSV Workbench & Cloud Intake current presentation"> | Configurable local CSV preparation and validation; a separate AWS pipeline demonstrates ingestion and replay. Supporting engineering work, with local/cloud contracts documented. |
+| [Retail Data Quality](https://github.com/ZakJRademacher/retail-sales-data-quality)<br><img src="https://raw.githubusercontent.com/ZakJRademacher/retail-sales-data-quality/main/deliverables/portfolio-cover-wide.png" width="300" alt="Retail Data Quality current presentation"> | Supporting audit of cleaning-policy sensitivity and sales reconciliation. |
+| [Complaint Intake Operations](https://github.com/ZakJRademacher/complaint-intake-operations)<br><img src="https://raw.githubusercontent.com/ZakJRademacher/complaint-intake-operations/main/deliverables/portfolio-cover-wide.png" width="300" alt="Complaint Intake Operations current presentation"> | SQL percentile reporting and a repeatable exception-review workflow that preserves reviewer notes by complaint ID. |
 
 ## Additional technical project
 
+[![Perigee — near-Earth observatory](https://raw.githubusercontent.com/ZakJRademacher/perigee-asteroid-tracker/main/deliverables/portfolio-cover-wide.png)](https://perigee.zakjrademacher.workers.dev/)
+
 [**Perigee · NASA/JPL Explorer**](https://perigee.zakjrademacher.workers.dev/) — an interactive scientific-data visualization with timestamped positions, API integrations and documented coordinate checks. [Source & method](https://github.com/ZakJRademacher/perigee-asteroid-tracker).
+
+The repositories include short motion cover previews alongside genuine report screenshots. Cover choreography is separate from native desktop report behavior.
 
 ## How I approach the work
 
