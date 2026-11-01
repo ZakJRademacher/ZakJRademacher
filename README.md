@@ -20,11 +20,11 @@ Start with a business question, then inspect the analysis, data preparation and 
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/monthly-sales-automation">Monthly Sales Review</a></h3>
-<a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/tableau-sales-preview.png"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/portfolio-cover-wide.png" width="420" alt="Current monthly sales automation presentation"></a>
+<a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/Monthly%20Sales%20Review.twbx"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/portfolio-cover-wide.png" width="420" alt="Current monthly sales automation presentation"></a>
 <p>Why did sales fall while order counts rose? A matched-period analysis with category, regional and product follow-ups.</p>
 <p><strong>9,800 historical lines</strong> across 48 monthly files, validated with Python and SQL.</p>
 <p><sub>Tableau · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/tableau-sales-preview.png">Preview the report →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-automation">Source &amp; method</a></p>
+<p><a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/deliverables/Monthly%20Sales%20Review.twbx">Download the workbook →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-automation">Source &amp; method</a></p>
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Commerce Operations</a></h3>
@@ -38,11 +38,11 @@ Start with a business question, then inspect the analysis, data preparation and 
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Hotel Booking Cancellations</a></h3>
-<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/dashboard-preview.png"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/portfolio-cover-wide.png" width="420" alt="Current hotel booking cancellation analysis presentation"></a>
+<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/Hotel%20Cancellation%20Review.twbx"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/portfolio-cover-wide.png" width="420" alt="Current hotel booking cancellation analysis presentation"></a>
 <p>Which booking segments create cancellation workload, and where should reservations test better confirmation? Compare counts and rates within the same hotel and period.</p>
 <p><strong>119,390 historical bookings</strong> with documented populations, limitations and reconciliation checks.</p>
 <p><sub>Tableau · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/dashboard-preview.png">Preview the report →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Source &amp; method</a></p>
+<p><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/deliverables/Hotel%20Cancellation%20Review.twbx">Download the workbook →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Source &amp; method</a></p>
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Marketing Campaign Performance</a></h3>
@@ -55,7 +55,7 @@ Start with a business question, then inspect the analysis, data preparation and 
 </tr>
 </table>
 
-Preview the current Tableau dashboards and download imported-data Power BI reports from the repositories. Redesigned Tableau workbooks remain local; historical workbook links are preserved in the project guides. These are local historical analyses; Tableau Public and scheduled cloud refresh are not configured.
+Download the redesigned Tableau workbooks and imported-data Power BI reports from the repositories. Both Tableau packages include their reporting CSVs; earlier layouts remain available through the project guides and repository history. These are local historical analyses; Tableau Public and scheduled cloud refresh are not configured.
 
 ## Repeatable data preparation
 
