@@ -14,38 +14,38 @@ These projects look at sales, delivery performance, hotel cancellations, and mar
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/monthly-sales-review">Monthly Sales Review</a></h3>
-<a href="https://github.com/ZakJRademacher/monthly-sales-review"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-review/main/deliverables/portfolio-cover.png" width="420" alt="Tableau report comparing December sales and orders"></a>
+<a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-review/main/deliverables/portfolio-cover.png" width="420" alt="Tableau report comparing December sales and orders"></a>
 <p>Sales fell 12.6% even as orders rose 33.5%. I compared the same December dates in both years, then traced the change through categories, regions, and products.</p>
 <p><sub>Tableau · Python · SQL</sub></p>
-<p><a href="https://github.com/ZakJRademacher/monthly-sales-review">View project →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review/blob/main/sql/review_drivers.sql">Inspect the analysis</a></p>
+<p><a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html"><b>Open live report</b></a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review">View project →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review/blob/main/sql/review_drivers.sql">Inspect the analysis</a></p>
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/commerce-delivery-review">Commerce Operations</a></h3>
-<a href="https://github.com/ZakJRademacher/commerce-delivery-review"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-delivery-review/main/deliverables/portfolio-cover.png" width="420" alt="Power BI report comparing late deliveries by destination state"></a>
+<a href="https://zakjrademacher.github.io/commerce-delivery-review/report/"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-delivery-review/main/deliverables/portfolio-cover.png" width="420" alt="Power BI report comparing late deliveries by destination state"></a>
 <p>A delivery review across 99,441 orders. I compared late-delivery counts with rates to show where a large workload and a high rate point to different priorities.</p>
 <p><sub>Power BI · DAX · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/commerce-delivery-review">View project →</a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review/blob/main/docs/SQL_INVESTIGATION.md">Inspect the analysis</a></p>
+<p><a href="https://zakjrademacher.github.io/commerce-delivery-review/report/"><b>Open live report</b></a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review">View project →</a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review/blob/main/docs/SQL_INVESTIGATION.md">Inspect the analysis</a></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Hotel Booking Cancellations</a></h3>
-<a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/portfolio-cover.png" width="420" alt="Tableau report showing booking cancellations by segment"></a>
+<a href="https://zakjrademacher.github.io/hotel-booking-cancellation-analysis/report/"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/portfolio-cover.png" width="420" alt="Tableau report showing booking cancellations by segment"></a>
 <p>Online travel agents accounted for the most cancellations at the City Hotel in 2016, while group bookings had a higher cancellation rate. The Tableau report makes that distinction visible.</p>
 <p><sub>Tableau · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">View project →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/docs/DECISION_MEMO.md">Inspect the analysis</a></p>
+<p><a href="https://zakjrademacher.github.io/hotel-booking-cancellation-analysis/report/"><b>Open live report</b></a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">View project →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/docs/DECISION_MEMO.md">Inspect the analysis</a></p>
 </td>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Marketing Campaign Performance</a></h3>
-<a href="https://github.com/ZakJRademacher/marketing-campaign-performance"><img src="https://raw.githubusercontent.com/ZakJRademacher/marketing-campaign-performance/main/deliverables/portfolio-cover.png" width="420" alt="Power BI report showing subscriptions and contact workload"></a>
+<a href="https://zakjrademacher.github.io/marketing-campaign-performance/report/"><img src="https://raw.githubusercontent.com/ZakJRademacher/marketing-campaign-performance/main/deliverables/portfolio-cover.png" width="420" alt="Power BI report showing subscriptions and contact workload"></a>
 <p>A review of 41,188 campaign records, looking at subscriptions and contact workload. I compared prior outcomes within the same month and channel, then outlined a follow-up experiment.</p>
 <p><sub>Power BI · DAX · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">View project →</a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/docs/OUTCOME_COMPARISON.md">Inspect the analysis</a></p>
+<p><a href="https://zakjrademacher.github.io/marketing-campaign-performance/report/"><b>Open live report</b></a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance">View project →</a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/docs/OUTCOME_COMPARISON.md">Inspect the analysis</a></p>
 </td>
 </tr>
 </table>
 
-You can view the previews here or download the reports from each project. The project guides explain filters, definitions, and refresh steps.
+Each project opens as a live, interactive report in the browser; the native Tableau and Power BI files are available to download from each project. The project guides explain filters, definitions, and refresh steps.
 
 ## Repeatable data preparation
 
@@ -71,6 +71,6 @@ From there, I look for findings worth following up and explain what the data can
 
 ## Supporting work
 
-[Retail data-quality judgment](https://github.com/ZakJRademacher/retail-sales-data-quality) · [Complaint intake and persistent notes](https://github.com/ZakJRademacher/complaint-intake-review) · [Cloud File Intake](https://github.com/ZakJRademacher/cloud-file-intake). Each explores a different part of preparing data or maintaining recurring reports.
+[Retail data-quality judgment](https://github.com/ZakJRademacher/retail-sales-data-quality) ([live report](https://zakjrademacher.github.io/retail-sales-data-quality/deliverables/report.html)) · [Complaint intake and persistent notes](https://github.com/ZakJRademacher/complaint-intake-review) ([live report](https://zakjrademacher.github.io/complaint-intake-review/report/)) · [Cloud File Intake](https://github.com/ZakJRademacher/cloud-file-intake). Each explores a different part of preparing data or maintaining recurring reports.
 
 My background includes operations supervision, computer-science coursework, and ongoing Python and SQL study.
