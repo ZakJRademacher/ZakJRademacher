@@ -13,18 +13,18 @@ These projects look at sales, delivery performance, hotel cancellations, and mar
 <table>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/monthly-sales-automation">Monthly Sales Review</a></h3>
-<a href="https://github.com/ZakJRademacher/monthly-sales-automation"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-automation/main/deliverables/portfolio-cover.png" width="420" alt="Tableau report comparing December sales and orders"></a>
+<h3><a href="https://github.com/ZakJRademacher/monthly-sales-review">Monthly Sales Review</a></h3>
+<a href="https://github.com/ZakJRademacher/monthly-sales-review"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-review/main/deliverables/portfolio-cover.png" width="420" alt="Tableau report comparing December sales and orders"></a>
 <p>Sales fell 12.6% even as orders rose 33.5%. I compared the same December dates in both years, then traced the change through categories, regions, and products.</p>
 <p><sub>Tableau · Python · SQL</sub></p>
-<p><a href="https://github.com/ZakJRademacher/monthly-sales-automation">View project →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-automation/blob/main/sql/review_drivers.sql">Inspect the analysis</a></p>
+<p><a href="https://github.com/ZakJRademacher/monthly-sales-review">View project →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review/blob/main/sql/review_drivers.sql">Inspect the analysis</a></p>
 </td>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">Commerce Operations</a></h3>
-<a href="https://github.com/ZakJRademacher/commerce-operations-powerbi"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-operations-powerbi/main/deliverables/portfolio-cover.png" width="420" alt="Power BI report comparing late deliveries by destination state"></a>
+<h3><a href="https://github.com/ZakJRademacher/commerce-delivery-review">Commerce Operations</a></h3>
+<a href="https://github.com/ZakJRademacher/commerce-delivery-review"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-delivery-review/main/deliverables/portfolio-cover.png" width="420" alt="Power BI report comparing late deliveries by destination state"></a>
 <p>A delivery review across 99,441 orders. I compared late-delivery counts with rates to show where a large workload and a high rate point to different priorities.</p>
 <p><sub>Power BI · DAX · Python · SQLite</sub></p>
-<p><a href="https://github.com/ZakJRademacher/commerce-operations-powerbi">View project →</a> · <a href="https://github.com/ZakJRademacher/commerce-operations-powerbi/blob/main/docs/SQL_INVESTIGATION.md">Inspect the analysis</a></p>
+<p><a href="https://github.com/ZakJRademacher/commerce-delivery-review">View project →</a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review/blob/main/docs/SQL_INVESTIGATION.md">Inspect the analysis</a></p>
 </td>
 </tr>
 <tr>
@@ -71,6 +71,6 @@ From there, I look for findings worth following up and explain what the data can
 
 ## Supporting work
 
-[Retail data-quality judgment](https://github.com/ZakJRademacher/[removed]) · [Complaint intake and persistent notes](https://github.com/ZakJRademacher/complaint-intake-operations) · [[removed]](https://github.com/ZakJRademacher/[removed]). Each explores a different part of preparing data or maintaining recurring reports.
+[Retail data-quality judgment](https://github.com/ZakJRademacher/[removed]) · [Complaint intake and persistent notes](https://github.com/ZakJRademacher/[removed]) · [[removed]](https://github.com/ZakJRademacher/[removed]). Each explores a different part of preparing data or maintaining recurring reports.
 
 My background includes operations supervision, computer-science coursework, and ongoing Python and SQL study.
