@@ -57,11 +57,11 @@ A local app for combining CSV and Excel exports, reviewing questionable records,
 
 [Download the local app](https://github.com/ZakJRademacher/data-workbench/raw/refs/heads/main/deliverables/Data-Workbench-2.0.1.zip) · [Operating guide](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/OPERATING_GUIDE.md) · [Verified comparison and limits](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/COMPARISON.md).
 
-## Additional technical project
+## Personal project
 
-[**Perigee — NASA/JPL Explorer**](https://perigee.zakjrademacher.workers.dev/) lets you explore asteroid encounters using NASA/JPL data, with a 3D view, a shared timeline, and predicted flyby paths. [Source and methodology](https://github.com/ZakJRademacher/perigee-asteroid-tracker).
+[**String Lab**](https://string-lab.zakjrademacher.workers.dev/) is a beginner-friendly guide to string theory for people with no physics background. A four-stop tour covers the problem, the idea, the cost and the catch, and an Advanced lab lets you explore vibrating strings, extra dimensions and Calabi–Yau shapes in 3D. [Source](https://github.com/ZakJRademacher/string-lab).
 
-<a href="https://perigee.zakjrademacher.workers.dev/"><img src="https://raw.githubusercontent.com/ZakJRademacher/perigee-asteroid-tracker/main/deliverables/portfolio-cover.png" width="560" alt="Perigee NASA/JPL explorer, shown in its labeled 2D schematic view"></a>
+<a href="https://string-lab.zakjrademacher.workers.dev/"><img src="https://raw.githubusercontent.com/ZakJRademacher/string-lab/main/deliverables/portfolio-cover.png" width="560" alt="String Lab welcome screen with a vibrating string loop in 3D"></a>
 
 ## How I approach the work
 
