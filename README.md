@@ -1,82 +1,72 @@
-![Zak Rademacher — data analysis and business reporting](assets/profile-header.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img src="assets/banner-light.svg" alt="Zak Rademacher: data analyst and Python developer. I build data tools and reports that check their own work." width="100%">
+</picture>
 
-I work with business data: cleaning up exports, checking the numbers, and building reports that make the next question easier to answer. My projects use **Python, SQL, Excel, Power Query, Power BI and Tableau**.
+**Data analyst and Python developer.** I build data tools and reporting pipelines with validated inputs, totals that reconcile, automated tests, and a live version you can open in the browser.
 
-I'm an **Operations Supervisor at Safeway**. That day-to-day work shapes the questions I bring to analysis, especially around workload, service, and recurring reporting.
+I supervise operations at a grocery store, so I build for the people who reconcile the numbers every day. Open to entry-level analyst and developer roles, and to 15–20 hours a week of remote project work on [Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17).
 
-Available for **15–20 hours of remote project work per week**. [Work with me on Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17).
+[![Python, JavaScript, SQLite, GitHub Actions, Cloudflare and Git](https://skillicons.dev/icons?i=py,js,sqlite,githubactions,cloudflare,git&theme=dark)](https://github.com/tandpfun/skill-icons)
 
-### Tools used in these projects
-
-[![Python, SQLite and Git](https://skillicons.dev/icons?i=py,sqlite,git&theme=light)](https://github.com/tandpfun/skill-icons)
-
-![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square) ![Power Query](https://img.shields.io/badge/Power%20Query-356859?style=flat-square) ![Power BI](https://img.shields.io/badge/Power%20BI-C5A42C?style=flat-square) ![Tableau](https://img.shields.io/badge/Tableau-147D80?style=flat-square)
-
-## Selected analysis projects
-
-These projects look at sales, delivery performance, hotel cancellations, and marketing campaigns. Each includes a report, the analysis behind it, and instructions for working with the data. All four use historical public datasets.
+## Software
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/monthly-sales-review">Monthly Sales Review</a></h3>
-<a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html"><img src="https://raw.githubusercontent.com/ZakJRademacher/monthly-sales-review/main/deliverables/portfolio-cover.png" width="420" alt="Tableau report comparing December sales and orders"></a>
-<p>Sales fell 12.6% even as orders rose 33.5%. I compared the same December dates in both years, then traced the change through categories, regions, and products.</p>
-<p><sub>Tableau · Python · SQL</sub></p>
-<p><a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html"><b>Open live report</b></a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review">View project →</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review/blob/main/sql/review_drivers.sql">Inspect the analysis</a></p>
+<a href="https://github.com/ZakJRademacher/data-workbench"><img src="assets/cover-workbench.svg" width="100%" alt="Data Workbench: clean, review and join CSV and Excel exports"></a>
+<p>A local app that cleans and joins CSV and Excel exports, sends bad records to a review queue, and seals every run with a hash manifest.</p>
+<p><sub><b>Python · FastAPI · DuckDB</b></sub><br><a href="https://github.com/ZakJRademacher/data-workbench">Code</a> · <a href="https://github.com/ZakJRademacher/data-workbench/blob/main/docs/TECHNICAL.md">Architecture</a></p>
 </td>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/commerce-delivery-review">Commerce Operations</a></h3>
-<a href="https://zakjrademacher.github.io/commerce-delivery-review/report/"><img src="https://raw.githubusercontent.com/ZakJRademacher/commerce-delivery-review/main/deliverables/portfolio-cover.png" width="420" alt="Power BI report comparing late deliveries by destination state"></a>
-<p>A delivery review across 99,441 orders. I compared late-delivery counts with rates to show where a large workload and a high rate point to different priorities.</p>
-<p><sub>Power BI · DAX · Python · SQLite</sub></p>
-<p><a href="https://zakjrademacher.github.io/commerce-delivery-review/report/"><b>Open live report</b></a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review">View project →</a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review/blob/main/docs/SQL_INVESTIGATION.md">Inspect the analysis</a></p>
+<a href="https://perigee.zakjrademacher.workers.dev/"><img src="assets/cover-perigee.svg" width="100%" alt="Perigee: NASA/JPL near-Earth asteroids in 3D"></a>
+<p>A 3D explorer of near-Earth asteroids from NASA and JPL data, with a Worker API and an interpolated 30-day path for each object.</p>
+<p><sub><b>JavaScript · Three.js · Cloudflare Workers</b></sub><br><a href="https://perigee.zakjrademacher.workers.dev/"><b>Live</b></a> · <a href="https://github.com/ZakJRademacher/perigee-asteroid-tracker">Code</a> · <a href="https://github.com/ZakJRademacher/perigee-asteroid-tracker/blob/main/docs/METHODOLOGY.md">Method</a></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Hotel Booking Cancellations</a></h3>
-<a href="https://zakjrademacher.github.io/hotel-booking-cancellation-analysis/report/"><img src="https://raw.githubusercontent.com/ZakJRademacher/hotel-booking-cancellation-analysis/main/deliverables/portfolio-cover.png" width="420" alt="Tableau report showing booking cancellations by segment"></a>
-<p>Online travel agents accounted for the most cancellations at the City Hotel in 2016, while group bookings had a higher cancellation rate. The Tableau report makes that distinction visible.</p>
-<p><sub>Tableau · Python · SQLite</sub></p>
-<p><a href="https://zakjrademacher.github.io/hotel-booking-cancellation-analysis/report/"><b>Open live report</b></a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">View project →</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/docs/DECISION_MEMO.md">Inspect the analysis</a></p>
+<a href="https://zakjrademacher.github.io/magnificent-seven-dashboard/"><img src="assets/cover-mag7.svg" width="100%" alt="Magnificent Seven Dashboard: rebuilt every trading day"></a>
+<p>A risk and return dashboard rebuilt every trading day by a scheduled pipeline. A test checks that the Python and browser metrics agree to within 1e-9.</p>
+<p><sub><b>Python · pandas · GitHub Actions</b></sub><br><a href="https://zakjrademacher.github.io/magnificent-seven-dashboard/"><b>Live</b></a> · <a href="https://github.com/ZakJRademacher/magnificent-seven-dashboard">Code</a></p>
 </td>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Marketing Campaign Performance</a></h3>
-<a href="https://zakjrademacher.github.io/marketing-campaign-performance/report/"><img src="https://raw.githubusercontent.com/ZakJRademacher/marketing-campaign-performance/main/deliverables/portfolio-cover.png" width="420" alt="Power BI report showing subscriptions and contact workload"></a>
-<p>A review of 41,188 campaign records, looking at subscriptions and contact workload. I compared prior outcomes within the same month and channel, then outlined a follow-up experiment.</p>
-<p><sub>Power BI · DAX · Python · SQLite</sub></p>
-<p><a href="https://zakjrademacher.github.io/marketing-campaign-performance/report/"><b>Open live report</b></a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance">View project →</a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/docs/OUTCOME_COMPARISON.md">Inspect the analysis</a></p>
+<a href="https://string-lab.zakjrademacher.workers.dev/"><img src="assets/cover-stringlab.svg" width="100%" alt="String Lab: a guided 3D tour of string theory"></a>
+<p>A guided 3D introduction to string theory for people with no physics background, with an advanced lab for exploring further.</p>
+<p><sub><b>JavaScript · Three.js · Vite</b></sub><br><a href="https://string-lab.zakjrademacher.workers.dev/"><b>Live</b></a> · <a href="https://github.com/ZakJRademacher/string-lab">Code</a></p>
 </td>
 </tr>
 </table>
 
-Each project opens as a live, interactive report in the browser; the native Tableau and Power BI files are available to download from each project. The project guides explain filters, definitions, and refresh steps.
+## Analysis and reporting
 
-## Repeatable data preparation
+Each report is backed by a Python and SQLite pipeline with tests that run on every push. The native Power BI and Tableau files download from each project.
 
-### [Data Workbench](https://github.com/ZakJRademacher/data-workbench)
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://zakjrademacher.github.io/commerce-delivery-review/report/"><img src="assets/cover-commerce.svg" width="100%" alt="Commerce Delivery Review: two states held 50.7% of late deliveries"></a>
+<p><sub><b>Power BI · DAX · Python · SQLite</b></sub><br><a href="https://zakjrademacher.github.io/commerce-delivery-review/report/"><b>Live</b></a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review">Code</a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review/blob/main/docs/SQL_INVESTIGATION.md">SQL</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html"><img src="assets/cover-monthly.svg" width="100%" alt="Monthly Sales Review: sales fell 12.6% while orders rose 33.5%"></a>
+<p><sub><b>Tableau · Python · SQLite</b></sub><br><a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html"><b>Live</b></a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review">Code</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review/blob/main/sql/review_drivers.sql">SQL</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://zakjrademacher.github.io/hotel-booking-cancellation-analysis/report/"><img src="assets/cover-hotel.svg" width="100%" alt="Hotel Booking Cancellations: group bookings cancelled at 74.7%"></a>
+<p><sub><b>Tableau · Python · SQLite</b></sub><br><a href="https://zakjrademacher.github.io/hotel-booking-cancellation-analysis/report/"><b>Live</b></a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Code</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/docs/DECISION_MEMO.md">Memo</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://zakjrademacher.github.io/marketing-campaign-performance/report/"><img src="assets/cover-marketing.svg" width="100%" alt="Marketing Campaign Performance: prior successes subscribed at 48.1% vs 7.8%"></a>
+<p><sub><b>Power BI · DAX · Python · SQLite</b></sub><br><a href="https://zakjrademacher.github.io/marketing-campaign-performance/report/"><b>Live</b></a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance">Code</a> · <a href="https://github.com/ZakJRademacher/marketing-campaign-performance/blob/main/docs/EXPERIMENT_PROPOSAL.md">Experiment</a></p>
+</td>
+</tr>
+</table>
 
-A local app for combining CSV and Excel exports, reviewing questionable records, and joining related tables without multiplying totals. Saved rules and source references make the next run easier to check.
+## How I work
 
-<a href="https://github.com/ZakJRademacher/data-workbench"><img src="https://raw.githubusercontent.com/ZakJRademacher/data-workbench/main/deliverables/portfolio-cover.png" width="560" alt="Data Workbench review workspace with preparation rules and review decisions"></a>
-
-[Download the local app](https://github.com/ZakJRademacher/data-workbench/raw/refs/heads/main/deliverables/Data-Workbench-2.0.1.zip) · [Operating guide](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/OPERATING_GUIDE.md) · [Verified comparison and limits](https://github.com/ZakJRademacher/data-workbench/blob/main/docs/COMPARISON.md).
-
-## Personal project
-
-[**String Lab**](https://string-lab.zakjrademacher.workers.dev/) is a beginner-friendly guide to string theory for people with no physics background. A four-stop tour covers the problem, the idea, the cost and the catch, and an Advanced lab lets you explore vibrating strings, extra dimensions and Calabi–Yau shapes in 3D. [Source](https://github.com/ZakJRademacher/string-lab).
-
-<a href="https://string-lab.zakjrademacher.workers.dev/"><img src="https://raw.githubusercontent.com/ZakJRademacher/string-lab/main/deliverables/portfolio-cover.png" width="560" alt="String Lab welcome screen with a vibrating string loop in 3D"></a>
-
-## How I approach the work
-
-I start with the question the report needs to answer and make sure the figures mean what they appear to mean. That includes checking how records join, which observations belong in a comparison, and whether totals agree with the source.
-
-From there, I look for findings worth following up and explain what the data can support. I also include the steps needed to refresh the work, review exceptions, and trace a result back to its records.
-
-## Supporting work
-
-[Retail data-quality judgment](https://github.com/ZakJRademacher/[removed]) ([live report](https://zakjrademacher.github.io/[removed]/deliverables/report.html)) · [Complaint intake and persistent notes](https://github.com/ZakJRademacher/[removed]) ([live report](https://zakjrademacher.github.io/[removed]/report/)). Each explores a different part of preparing data or maintaining recurring reports.
-
-My background includes operations supervision, computer-science coursework, and ongoing Python and SQL study.
+- **Check the data before trusting it.** Inputs are validated, joins are tested for double counting, and totals reconcile to the source.
+- **Make it repeatable.** Every project rebuilds from its inputs with one command, and tests run on every push.
+- **Say what the data can't show.** Each report states its limits next to its findings.
