@@ -77,6 +77,6 @@ From there, I look for findings worth following up and explain what the data can
 
 ## Supporting work
 
-[Retail data-quality judgment](https://github.com/ZakJRademacher/retail-sales-data-quality) ([live report](https://zakjrademacher.github.io/retail-sales-data-quality/deliverables/report.html)) · [Complaint intake and persistent notes](https://github.com/ZakJRademacher/complaint-intake-review) ([live report](https://zakjrademacher.github.io/complaint-intake-review/report/)) · [Cloud File Intake](https://github.com/ZakJRademacher/cloud-file-intake). Each explores a different part of preparing data or maintaining recurring reports.
+[Retail data-quality judgment](https://github.com/ZakJRademacher/retail-sales-data-quality) ([live report](https://zakjrademacher.github.io/retail-sales-data-quality/deliverables/report.html)) · [Complaint intake and persistent notes](https://github.com/ZakJRademacher/complaint-intake-review) ([live report](https://zakjrademacher.github.io/complaint-intake-review/report/)). Each explores a different part of preparing data or maintaining recurring reports.
 
 My background includes operations supervision, computer-science coursework, and ongoing Python and SQL study.
