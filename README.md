@@ -6,6 +6,12 @@ I'm an **Operations Supervisor at Safeway**. That day-to-day work shapes the que
 
 Available for **15–20 hours of remote project work per week**. [Work with me on Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17).
 
+### Tools used in these projects
+
+[![Python, SQLite and Git](https://skillicons.dev/icons?i=py,sqlite,git&theme=light)](https://github.com/tandpfun/skill-icons)
+
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square) ![Power Query](https://img.shields.io/badge/Power%20Query-356859?style=flat-square) ![Power BI](https://img.shields.io/badge/Power%20BI-C5A42C?style=flat-square) ![Tableau](https://img.shields.io/badge/Tableau-147D80?style=flat-square)
+
 ## Selected analysis projects
 
 These projects look at sales, delivery performance, hotel cancellations, and marketing campaigns. Each includes a report, the analysis behind it, and instructions for working with the data. All four use historical public datasets.
