@@ -17,6 +17,9 @@ import { createInterface } from "node:readline";
 
 const TIMEOUT_MS = Number(process.env.CODEX_MCP_TIMEOUT_MS || 30 * 60 * 1000);
 const DEFAULT_MODEL = process.env.CODEX_MCP_MODEL || undefined;
+// Cap what flows back into Claude's context. Codex's full transcript never does; only its final report.
+const MAX_REPORT_CHARS = Number(process.env.CODEX_MCP_MAX_REPORT_CHARS || 6000);
+const clip = (s, n) => (s.length > n ? s.slice(0, n) + `\n…[truncated ${s.length - n} chars]` : s);
 
 const TOOLS = [
   {
@@ -95,12 +98,12 @@ function runCodex(args, { cwd, stdin }) {
       try { last = readFileSync(outFile, "utf8").trim(); } catch {}
       rmSync(dir, { recursive: true, force: true });
       const sessionId = findSessionId(head);
-      if (code === 0 && last) return resolve({ ok: true, text: last, sessionId });
+      if (code === 0 && last) return resolve({ ok: true, text: clip(last, MAX_REPORT_CHARS), sessionId });
       const why = signal ? `killed by ${signal} (timeout ${TIMEOUT_MS} ms?)` : `exit code ${code}`;
       resolve({
         ok: false,
         sessionId,
-        text: `Codex failed (${why}).\n${last ? `Last message:\n${last}\n` : ""}stderr (tail):\n${stderr.slice(-4000)}\nstdout (tail):\n${stdout.slice(-2000)}`,
+        text: `Codex failed (${why}).\n${last ? `Last message:\n${clip(last, 2000)}\n` : ""}stderr (tail):\n${stderr.slice(-1500)}\nstdout (tail):\n${stdout.slice(-500)}`,
       });
     });
     if (stdin) child.stdin.write(stdin);
@@ -110,7 +113,10 @@ function runCodex(args, { cwd, stdin }) {
 
 function changedFiles(cwd) {
   const r = spawnSync("git", ["status", "--short"], { cwd, encoding: "utf8" });
-  return r.status === 0 ? r.stdout.trim() || "(no changes)" : "(not a git repository)";
+  if (r.status !== 0) return "(not a git repository)";
+  const lines = r.stdout.trim().split("\n").filter(Boolean);
+  if (!lines.length) return "(no changes)";
+  return lines.length > 40 ? lines.slice(0, 40).join("\n") + `\n…and ${lines.length - 40} more` : lines.join("\n");
 }
 
 async function callTool(name, a = {}) {
