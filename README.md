@@ -5,7 +5,7 @@
 
 <br>
 
-I build data tools and reporting pipelines that you can trust without re-checking: inputs are validated, totals reconcile to the source, tests run on every push, and there's a live version you can open in the browser.
+I build data tools and reports for recurring work. I check whether joins preserve the totals, keep figures traceable to source records, and show what needs a closer look.
 
 My day job is running operations at a grocery store, where reconciling the numbers is part of every shift. I build for the people who do that work. I'm also completing a B.S. in Computer Science at Southern New Hampshire University.
 
@@ -20,17 +20,19 @@ My day job is running operations at a grocery store, where reconciling the numbe
 <td width="50%" valign="top">
 <a href="https://github.com/ZakJRademacher/data-workbench"><img src="assets/card-workbench.webp" width="100%" alt="Data Workbench screenshot"></a>
 <h3><a href="https://github.com/ZakJRademacher/data-workbench">Data Workbench</a></h3>
-<p>A local app that cleans and joins CSV and Excel exports, sends bad records to a review queue, and seals every run with a hash manifest.</p>
+<p>A local app that cleans and joins CSV and Excel exports, sends questionable rows to a review queue, and records output hashes. A separate reference implementation checks counts, totals, and joins against four public datasets.</p>
+<p>The 2.1 payout reconciliation preview made <b>zero incorrect automatic matches across 9,895 synthetic payouts</b>. Stripe and QuickBooks export layouts still need validation with files from those platforms.</p>
 <p><sub><code>Python</code> <code>FastAPI</code> <code>DuckDB</code></sub></p>
 <p><a href="https://github.com/ZakJRademacher/data-workbench/releases/download/v2.1.0/Data-Workbench-2.1.0.zip"><b>Download for Windows</b></a> · <a href="https://github.com/ZakJRademacher/data-workbench#open-the-app">Setup and demo</a></p>
-<p><a href="https://github.com/ZakJRademacher/data-workbench">Code</a> · <a href="https://github.com/ZakJRademacher/data-workbench/blob/main/docs/TECHNICAL.md">Architecture</a></p>
+<p><a href="https://github.com/ZakJRademacher/data-workbench">Code</a> · <a href="https://github.com/ZakJRademacher/data-workbench/blob/main/docs/TECHNICAL.md">Architecture</a> · <a href="https://github.com/ZakJRademacher/data-workbench/tree/main/realdata">Regression tests</a> · <a href="https://github.com/ZakJRademacher/data-workbench/blob/main/docs/RECONCILIATION_DESIGN.md#phase-1-status">Reconciliation evidence</a></p>
 </td>
 <td width="50%" valign="top">
 <a href="https://zakjrademacher.github.io/magnificent-seven-dashboard/"><img src="assets/card-mag7.webp" width="100%" alt="Magnificent Seven Dashboard screenshot"></a>
 <h3><a href="https://zakjrademacher.github.io/magnificent-seven-dashboard/">Magnificent Seven Dashboard</a></h3>
-<p>A risk and return dashboard rebuilt every trading day by a scheduled pipeline. A test checks that the Python and browser metrics agree to within 1e-9.</p>
+<p>A risk and return dashboard comparing the Magnificent Seven with an S&amp;P 500 ETF. The scheduled refresh validates prices against the trading calendar and keeps the last good data when checks block publication. The public status page shows what happened on each run.</p>
+<p>A daily watchdog raises an issue if the data falls two trading days behind. A parity test checks that Python and browser metrics agree to within 1e-9.</p>
 <p><sub><code>Python</code> <code>pandas</code> <code>GitHub Actions</code></sub></p>
-<p><a href="https://zakjrademacher.github.io/magnificent-seven-dashboard/"><b>Live ↗</b></a> · <a href="https://github.com/ZakJRademacher/magnificent-seven-dashboard">Code</a></p>
+<p><a href="https://zakjrademacher.github.io/magnificent-seven-dashboard/"><b>Live ↗</b></a> · <a href="https://zakjrademacher.github.io/magnificent-seven-dashboard/status.html">Pipeline status</a> · <a href="https://github.com/ZakJRademacher/magnificent-seven-dashboard">Code</a></p>
 </td>
 </tr>
 <tr>
@@ -93,7 +95,7 @@ Each report is backed by a Python + SQLite pipeline with tests on every push. Na
 ## How I work
 
 **Check the data before trusting it.** Inputs are validated, joins are tested for double counting, and totals reconcile to the source.<br>
-**Make it repeatable.** Every project rebuilds from its inputs with one command, and tests run on every push.<br>
+**Make it repeatable.** The report repositories document their inputs, refresh steps, and validation checks.<br>
 **Say what the data can't show.** Each report states its limits next to its findings.
 
 <br>
