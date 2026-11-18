@@ -7,7 +7,7 @@
 
 I build data tools and reporting pipelines that you can trust without re-checking: inputs are validated, totals reconcile to the source, tests run on every push, and there's a live version you can open in the browser.
 
-My day job is running operations at a grocery store, where reconciling the numbers is part of every shift. I build for the people who do that work.
+My day job is running operations at a grocery store, where reconciling the numbers is part of every shift. I build for the people who do that work. I'm also completing a B.S. in Computer Science at Southern New Hampshire University.
 
 **Open to** analyst and developer roles, and 15–20 hrs/week of remote contract work via [Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17).
 
