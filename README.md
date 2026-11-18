@@ -22,6 +22,7 @@ My day job is running operations at a grocery store, where reconciling the numbe
 <h3><a href="https://github.com/ZakJRademacher/data-workbench">Data Workbench</a></h3>
 <p>A local app that cleans and joins CSV and Excel exports, sends bad records to a review queue, and seals every run with a hash manifest.</p>
 <p><sub><code>Python</code> <code>FastAPI</code> <code>DuckDB</code></sub></p>
+<p><a href="https://github.com/ZakJRademacher/data-workbench/releases/download/v2.1.0/Data-Workbench-2.1.0.zip"><b>Download for Windows</b></a> · <a href="https://github.com/ZakJRademacher/data-workbench#open-the-app">Setup and demo</a></p>
 <p><a href="https://github.com/ZakJRademacher/data-workbench">Code</a> · <a href="https://github.com/ZakJRademacher/data-workbench/blob/main/docs/TECHNICAL.md">Architecture</a></p>
 </td>
 <td width="50%" valign="top">
