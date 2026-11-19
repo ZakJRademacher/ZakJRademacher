@@ -23,7 +23,7 @@ My day job is running operations at a grocery store, where reconciling the numbe
 <p>A local app that cleans and joins CSV and Excel exports, sends questionable rows to a review queue, and records output hashes. A separate reference implementation checks counts, totals, and joins against four public datasets.</p>
 <p>The 2.1 payout reconciliation preview made <b>zero incorrect automatic matches across 9,895 synthetic payouts</b>. Stripe and QuickBooks export layouts still need validation with files from those platforms.</p>
 <p><sub><code>Python</code> <code>FastAPI</code> <code>DuckDB</code></sub></p>
-<p><a href="https://github.com/ZakJRademacher/data-workbench/releases/download/v2.1.0/Data-Workbench-2.1.0.zip"><b>Download for Windows</b></a> · <a href="https://github.com/ZakJRademacher/data-workbench#open-the-app">Setup and demo</a></p>
+<p><a href="https://github.com/ZakJRademacher/data-workbench/releases/latest"><b>Download for Windows</b></a> · <a href="https://github.com/ZakJRademacher/data-workbench#open-the-app">Setup and demo</a></p>
 <p><a href="https://github.com/ZakJRademacher/data-workbench">Code</a> · <a href="https://github.com/ZakJRademacher/data-workbench/blob/main/docs/TECHNICAL.md">Architecture</a> · <a href="https://github.com/ZakJRademacher/data-workbench/tree/main/realdata">Regression tests</a> · <a href="https://github.com/ZakJRademacher/data-workbench/blob/main/docs/RECONCILIATION_DESIGN.md#phase-1-status">Reconciliation evidence</a></p>
 </td>
 <td width="50%" valign="top">
