@@ -4,14 +4,20 @@ Renders the banner (light + dark) and one framed preview per project from
 HTML templates with headless Chromium, then writes compressed WebP/PNG files
 into ../assets.
 
-    python tools/build_assets.py
+    python tools/build_assets.py            # banner and cards
+    python tools/build_assets.py --cards    # cards only
 
-Requires: playwright (with Chromium), Pillow, and the Inter and JetBrains Mono
-fonts installed locally.
+Each card is named for the project version it shows (card-<slug>-<version>.webp,
+from shots/<slug>-<version>.webp), so a new version gets a new file and GitHub's
+image cache never serves an old picture.
+
+Requires: playwright (with Chromium, or CHROMIUM_PATH pointing at Chrome or
+Edge) and Pillow. Inter and JetBrains Mono load from Google Fonts.
 """
 
 from __future__ import annotations
 
+import argparse
 import base64
 import io
 import os
@@ -26,17 +32,20 @@ OUT = ROOT.parent / "assets"
 
 ACCENT = "#3ecf9b"
 
-# slug -> host shown in the window's address bar
+# slug -> (host shown in the window's address bar, project version the shot shows)
 PROJECTS = {
-    "workbench": "localhost:8000 · data-workbench",
-    "perigee": "perigee.zakjrademacher.workers.dev",
-    "mag7": "zakjrademacher.github.io/magnificent-seven-dashboard",
-    "stringlab": "string-lab.zakjrademacher.workers.dev",
-    "commerce": "zakjrademacher.github.io/commerce-delivery-review",
-    "monthly": "zakjrademacher.github.io/monthly-sales-review",
-    "hotel": "zakjrademacher.github.io/hotel-booking-cancellation-analysis",
-    "marketing": "zakjrademacher.github.io/marketing-campaign-performance",
+    "workbench": ("localhost:8810 · data-workbench", "2.2.2"),
+    "perigee": ("perigee.zakjrademacher.workers.dev", "1.5.0"),
+    "mag7": ("zakjrademacher.github.io/magnificent-seven-dashboard", "1.0.0"),
+    "stringlab": ("string-lab.zakjrademacher.workers.dev", "1.0.0"),
+    "commerce": ("zakjrademacher.github.io/commerce-delivery-review", "1.0.0"),
+    "monthly": ("zakjrademacher.github.io/monthly-sales-review", "1.0.0"),
+    "hotel": ("zakjrademacher.github.io/hotel-booking-cancellation-analysis", "1.0.0"),
+    "marketing": ("zakjrademacher.github.io/marketing-campaign-performance", "1.0.0"),
 }
+
+FONTS = ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800'
+         '&family=JetBrains+Mono:wght@400;500;600&display=block">')
 
 THEMES = {
     "dark": dict(
@@ -74,7 +83,7 @@ def banner_html(t: dict) -> str:
     stack = " <i>/</i> ".join(
         ["Python", "SQL", "DuckDB", "FastAPI", "JavaScript", "Power BI", "Tableau"]
     )
-    return f"""<!doctype html><html><head><style>{BASE_CSS}
+    return f"""<!doctype html><html><head>{FONTS}<style>{BASE_CSS}
 .b{{width:1280px;height:320px;border-radius:18px;background:{t['bg']};
    border:1px solid {t['border']};position:relative;overflow:hidden;display:flex;
    align-items:center;padding:0 64px}}
@@ -121,7 +130,7 @@ p{{font-size:23px;color:{t['muted']};letter-spacing:-.01em}}
 
 
 def card_html(shot_b64: str, host: str) -> str:
-    return f"""<!doctype html><html><head><style>{BASE_CSS}
+    return f"""<!doctype html><html><head>{FONTS}<style>{BASE_CSS}
 .w{{width:960px;border-radius:14px;overflow:hidden;background:#0d1117;
    border:1px solid #2a3038}}
 .top{{height:44px;display:flex;align-items:center;padding:0 16px;gap:8px;
@@ -147,21 +156,24 @@ def shoot(page, html: str, selector: str, scale: int) -> Image.Image:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Build the profile README images.")
+    parser.add_argument("--cards", action="store_true", help="rebuild the project cards only")
+    cards_only = parser.parse_args().cards
     OUT.mkdir(exist_ok=True)
     with sync_playwright() as p:
         # CHROMIUM_PATH lets you point at a preinstalled browser.
         browser = p.chromium.launch(executable_path=os.environ.get("CHROMIUM_PATH") or None)
         page = browser.new_page(device_scale_factor=2, viewport={"width": 1400, "height": 900})
 
-        for name, theme in THEMES.items():
+        for name, theme in ({} if cards_only else THEMES).items():
             img = shoot(page, banner_html(theme), ".b", 2)
             img.save(OUT / f"banner-{name}.png", optimize=True)
 
         page_1x = browser.new_page(device_scale_factor=1, viewport={"width": 1100, "height": 900})
-        for slug, host in PROJECTS.items():
-            b64 = base64.b64encode((SHOTS / f"{slug}.webp").read_bytes()).decode()
+        for slug, (host, version) in PROJECTS.items():
+            b64 = base64.b64encode((SHOTS / f"{slug}-{version}.webp").read_bytes()).decode()
             img = shoot(page_1x, card_html(b64, host), ".w", 1)
-            img.save(OUT / f"card-{slug}.webp", quality=86, method=6)
+            img.save(OUT / f"card-{slug}-{version}.webp", quality=86, method=6)
 
         browser.close()
     for f in sorted(OUT.iterdir()):
