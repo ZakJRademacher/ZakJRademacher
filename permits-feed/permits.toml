@@ -1,0 +1,55 @@
+# Weekly feed of new Chicago building permits from the city's open-data portal.
+# Any Socrata portal works: change [source] and the field names in [fields].
+# Find a dataset's field names at https://<domain>/api/views/<dataset>.json
+# (the "fieldName" of each column). Every run checks that these fields exist.
+
+[source]
+name = "Chicago building permits"
+domain = "data.cityofchicago.org"
+dataset = "ydr8-5enu"
+id_field = "id"              # unique record id in the source
+date_field = "issue_date"    # used to fetch only recent records
+start_date = "2026-09-01"    # the first run fetches from here
+lookback_days = 14           # later runs re-check this many days, to catch late-posted records
+# Optional SoQL filter, applied on the server. Example: only bigger jobs.
+where = "reported_cost >= 50000"
+
+[settings]
+page_size = 1000
+delay_seconds = 1.0
+timeout_seconds = 30
+max_retries = 3
+user_agent = "permits-feed/0.1 (+https://github.com/ZakJRademacher)"
+
+# Output column = source field. Only these fields are stored, so personal data
+# (owner and contact names) never enters the database or the reports.
+[fields]
+permit_number = "permit_"
+permit_type = "permit_type"
+issue_date = "issue_date"
+street_number = "street_number"
+street_direction = "street_direction"
+street_name = "street_name"
+work_description = "work_description"
+reported_cost = "reported_cost"
+total_fee = "total_fee"
+community_area = "community_area"
+ward = "ward"
+latitude = "latitude"
+longitude = "longitude"
+
+# How to clean each output column: date, money, int, float or text (default).
+[types]
+issue_date = "date"
+reported_cost = "money"
+total_fee = "money"
+community_area = "int"
+ward = "int"
+latitude = "float"
+longitude = "float"
+
+# Columns used for the summary sheets and chart.
+[report]
+group_by = ["permit_type", "community_area"]
+value_field = "reported_cost"
+address = ["street_number", "street_direction", "street_name"]
