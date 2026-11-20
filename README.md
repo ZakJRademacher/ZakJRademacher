@@ -18,7 +18,7 @@ My day job is running operations at a grocery store, where reconciling the numbe
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/ZakJRademacher/data-workbench"><img src="assets/card-workbench.webp" width="100%" alt="Data Workbench screenshot"></a>
+<a href="https://github.com/ZakJRademacher/data-workbench"><img src="assets/card-workbench-2.2.2.webp" width="100%" alt="Data Workbench screenshot"></a>
 <h3><a href="https://github.com/ZakJRademacher/data-workbench">Data Workbench</a></h3>
 <p>A local app that cleans and joins CSV and Excel exports, sends questionable rows to a review queue, and records output hashes. A separate reference implementation checks counts, totals, and joins against four public datasets.</p>
 <p>The 2.1 payout reconciliation preview made <b>zero incorrect automatic matches across 9,895 synthetic payouts</b>. Stripe and QuickBooks export layouts still need validation with files from those platforms.</p>
@@ -27,7 +27,7 @@ My day job is running operations at a grocery store, where reconciling the numbe
 <p><a href="https://github.com/ZakJRademacher/data-workbench">Code</a> · <a href="https://github.com/ZakJRademacher/data-workbench/blob/main/docs/TECHNICAL.md">Architecture</a> · <a href="https://github.com/ZakJRademacher/data-workbench/tree/main/realdata">Regression tests</a> · <a href="https://github.com/ZakJRademacher/data-workbench/blob/main/docs/RECONCILIATION_DESIGN.md#phase-1-status">Reconciliation evidence</a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://zakjrademacher.github.io/magnificent-seven-dashboard/"><img src="assets/card-mag7.webp" width="100%" alt="Magnificent Seven Dashboard screenshot"></a>
+<a href="https://zakjrademacher.github.io/magnificent-seven-dashboard/"><img src="assets/card-mag7-1.0.0.webp" width="100%" alt="Magnificent Seven Dashboard screenshot"></a>
 <h3><a href="https://zakjrademacher.github.io/magnificent-seven-dashboard/">Magnificent Seven Dashboard</a></h3>
 <p>A risk and return dashboard comparing the Magnificent Seven with an S&amp;P 500 ETF. The scheduled refresh validates prices against the trading calendar and keeps the last good data when checks block publication. The public status page shows what happened on each run.</p>
 <p>A daily watchdog raises an issue if the data falls two trading days behind. A parity test checks that Python and browser metrics agree to within 1e-9.</p>
@@ -37,14 +37,14 @@ My day job is running operations at a grocery store, where reconciling the numbe
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://perigee.zakjrademacher.workers.dev/"><img src="assets/card-perigee.webp" width="100%" alt="Perigee screenshot"></a>
+<a href="https://perigee.zakjrademacher.workers.dev/"><img src="assets/card-perigee-1.5.0.webp" width="100%" alt="Perigee screenshot"></a>
 <h3><a href="https://perigee.zakjrademacher.workers.dev/">Perigee</a></h3>
 <p>A 3D explorer of near-Earth asteroids from NASA and JPL data, with a Worker API and an interpolated 30-day path for each object.</p>
 <p><sub><code>JavaScript</code> <code>Three.js</code> <code>Cloudflare Workers</code></sub></p>
 <p><a href="https://perigee.zakjrademacher.workers.dev/"><b>Live ↗</b></a> · <a href="https://github.com/ZakJRademacher/perigee-asteroid-tracker">Code</a> · <a href="https://github.com/ZakJRademacher/perigee-asteroid-tracker/blob/main/docs/METHODOLOGY.md">Method</a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://string-lab.zakjrademacher.workers.dev/"><img src="assets/card-stringlab.webp" width="100%" alt="String Lab screenshot"></a>
+<a href="https://string-lab.zakjrademacher.workers.dev/"><img src="assets/card-stringlab-1.0.0.webp" width="100%" alt="String Lab screenshot"></a>
 <h3><a href="https://string-lab.zakjrademacher.workers.dev/">String Lab</a></h3>
 <p>A guided 3D introduction to string theory for people with no physics background, with an advanced lab for exploring further.</p>
 <p><sub><code>JavaScript</code> <code>Three.js</code> <code>Vite</code></sub></p>
@@ -60,14 +60,14 @@ Each report is backed by a Python + SQLite pipeline with tests on every push. Na
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://zakjrademacher.github.io/commerce-delivery-review/report/"><img src="assets/card-commerce.webp" width="100%" alt="Commerce Delivery Review screenshot"></a>
+<a href="https://zakjrademacher.github.io/commerce-delivery-review/report/"><img src="assets/card-commerce-1.0.0.webp" width="100%" alt="Commerce Delivery Review screenshot"></a>
 <h3><a href="https://zakjrademacher.github.io/commerce-delivery-review/report/">Commerce Delivery Review</a></h3>
 <p>Two states held <b>50.7%</b> of 6,534 late deliveries, so that's where operations should look first.</p>
 <p><sub><code>Power BI</code> <code>DAX</code> <code>Python</code> <code>SQLite</code></sub></p>
 <p><a href="https://zakjrademacher.github.io/commerce-delivery-review/report/"><b>Live ↗</b></a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review">Code</a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review/blob/main/docs/SQL_INVESTIGATION.md">SQL</a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html"><img src="assets/card-monthly.webp" width="100%" alt="Monthly Sales Review screenshot"></a>
+<a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html"><img src="assets/card-monthly-1.0.0.webp" width="100%" alt="Monthly Sales Review screenshot"></a>
 <h3><a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html">Monthly Sales Review</a></h3>
 <p>Sales fell <b>12.6%</b> while orders rose <b>33.5%</b>. The review traces the gap by region and category.</p>
 <p><sub><code>Tableau</code> <code>Python</code> <code>SQLite</code></sub></p>
@@ -76,14 +76,14 @@ Each report is backed by a Python + SQLite pipeline with tests on every push. Na
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://zakjrademacher.github.io/hotel-booking-cancellation-analysis/report/"><img src="assets/card-hotel.webp" width="100%" alt="Hotel Booking Cancellations screenshot"></a>
+<a href="https://zakjrademacher.github.io/hotel-booking-cancellation-analysis/report/"><img src="assets/card-hotel-1.0.0.webp" width="100%" alt="Hotel Booking Cancellations screenshot"></a>
 <h3><a href="https://zakjrademacher.github.io/hotel-booking-cancellation-analysis/report/">Hotel Booking Cancellations</a></h3>
 <p>Group bookings cancelled at <b>74.7%</b> (City Hotel, 2016), with a memo on where to test better confirmation.</p>
 <p><sub><code>Tableau</code> <code>Python</code> <code>SQLite</code></sub></p>
 <p><a href="https://zakjrademacher.github.io/hotel-booking-cancellation-analysis/report/"><b>Live ↗</b></a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis">Code</a> · <a href="https://github.com/ZakJRademacher/hotel-booking-cancellation-analysis/blob/main/docs/DECISION_MEMO.md">Memo</a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://zakjrademacher.github.io/marketing-campaign-performance/report/"><img src="assets/card-marketing.webp" width="100%" alt="Marketing Campaign Performance screenshot"></a>
+<a href="https://zakjrademacher.github.io/marketing-campaign-performance/report/"><img src="assets/card-marketing-1.0.0.webp" width="100%" alt="Marketing Campaign Performance screenshot"></a>
 <h3><a href="https://zakjrademacher.github.io/marketing-campaign-performance/report/">Marketing Campaign Performance</a></h3>
 <p>Prior successes subscribed at <b>48.1%</b> vs 7.8%, with a proposed follow-up experiment to test it.</p>
 <p><sub><code>Power BI</code> <code>DAX</code> <code>Python</code> <code>SQLite</code></sub></p>
