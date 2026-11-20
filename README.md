@@ -18,9 +18,9 @@ My day job is running operations at a grocery store, where reconciling the numbe
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/ZakJRademacher/data-workbench"><img src="assets/card-workbench-2.2.2.webp" width="100%" alt="Data Workbench screenshot"></a>
+<a href="https://github.com/ZakJRademacher/data-workbench"><img src="assets/card-workbench-3.0.0.webp" width="100%" alt="Data Workbench screenshot"></a>
 <h3><a href="https://github.com/ZakJRademacher/data-workbench">Data Workbench</a></h3>
-<p>A local app that cleans and joins CSV and Excel exports, sends questionable rows to a review queue, and records output hashes. A separate reference implementation checks counts, totals, and joins against four public datasets.</p>
+<p>A Windows app, with its own window and installer, that cleans and joins CSV and Excel exports, sends questionable rows to a review queue, and records output hashes. Version 3.0 adds screens for reconciling Stripe payouts against QuickBooks deposits and Shopify or WooCommerce orders against their payments. A separate reference implementation checks counts, totals, and joins against four public datasets.</p>
 <p>The 2.1 payout reconciliation preview made <b>zero incorrect automatic matches across 9,895 synthetic payouts</b>. Stripe and QuickBooks export layouts still need validation with files from those platforms.</p>
 <p><sub><code>Python</code> <code>FastAPI</code> <code>DuckDB</code></sub></p>
 <p><a href="https://github.com/ZakJRademacher/data-workbench/releases/latest"><b>Download for Windows</b></a> · <a href="https://github.com/ZakJRademacher/data-workbench#open-the-app">Setup and demo</a></p>
