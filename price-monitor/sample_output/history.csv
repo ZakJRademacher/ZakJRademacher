@@ -1,0 +1,106 @@
+observed_at,product,status,price,currency,in_stock,method,error,url
+2026-10-31T14:00:00+00:00,Air Fryer XL,ok,89.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-10-31T14:00:00+00:00,Espresso Machine,ok,349.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-10-31T14:00:00+00:00,Noise-Cancelling Headphones,ok,199.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-10-31T14:00:00+00:00,Standing Desk,ok,499.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-10-31T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-01T14:00:00+00:00,Air Fryer XL,ok,89.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-01T14:00:00+00:00,Espresso Machine,ok,349.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-01T14:00:00+00:00,Noise-Cancelling Headphones,ok,199.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-01T14:00:00+00:00,Standing Desk,ok,499.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-01T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-02T14:00:00+00:00,Air Fryer XL,ok,89.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-02T14:00:00+00:00,Espresso Machine,ok,349.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-02T14:00:00+00:00,Noise-Cancelling Headphones,ok,199.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-02T14:00:00+00:00,Standing Desk,ok,499.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-02T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-03T14:00:00+00:00,Air Fryer XL,ok,89.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-03T14:00:00+00:00,Espresso Machine,ok,349.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-03T14:00:00+00:00,Noise-Cancelling Headphones,ok,199.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-03T14:00:00+00:00,Standing Desk,ok,499.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-03T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-04T14:00:00+00:00,Air Fryer XL,ok,89.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-04T14:00:00+00:00,Espresso Machine,ok,349.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-04T14:00:00+00:00,Noise-Cancelling Headphones,ok,199.00,USD,no,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-04T14:00:00+00:00,Standing Desk,ok,499.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-04T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-05T14:00:00+00:00,Air Fryer XL,ok,89.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-05T14:00:00+00:00,Espresso Machine,ok,349.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-05T14:00:00+00:00,Noise-Cancelling Headphones,ok,199.00,USD,no,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-05T14:00:00+00:00,Standing Desk,ok,499.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-05T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-06T14:00:00+00:00,Air Fryer XL,ok,89.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-06T14:00:00+00:00,Espresso Machine,ok,329.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-06T14:00:00+00:00,Noise-Cancelling Headphones,ok,199.00,USD,no,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-06T14:00:00+00:00,Standing Desk,ok,499.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-06T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-07T14:00:00+00:00,Air Fryer XL,ok,94.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-07T14:00:00+00:00,Espresso Machine,ok,329.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-07T14:00:00+00:00,Noise-Cancelling Headphones,ok,199.00,USD,no,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-07T14:00:00+00:00,Standing Desk,ok,499.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-07T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-08T14:00:00+00:00,Air Fryer XL,ok,94.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-08T14:00:00+00:00,Espresso Machine,ok,329.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-08T14:00:00+00:00,Noise-Cancelling Headphones,ok,199.00,USD,no,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-08T14:00:00+00:00,Standing Desk,ok,499.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-08T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-09T14:00:00+00:00,Air Fryer XL,ok,94.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-09T14:00:00+00:00,Espresso Machine,ok,329.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-09T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-09T14:00:00+00:00,Standing Desk,ok,499.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-09T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-10T14:00:00+00:00,Air Fryer XL,ok,94.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-10T14:00:00+00:00,Espresso Machine,ok,329.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-10T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-10T14:00:00+00:00,Standing Desk,ok,499.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-10T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-11T14:00:00+00:00,Air Fryer XL,ok,94.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-11T14:00:00+00:00,Espresso Machine,ok,329.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-11T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-11T14:00:00+00:00,Standing Desk,ok,449.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-11T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-12T14:00:00+00:00,Air Fryer XL,ok,94.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-12T14:00:00+00:00,Espresso Machine,ok,329.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-12T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-12T14:00:00+00:00,Standing Desk,ok,449.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-12T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-13T14:00:00+00:00,Air Fryer XL,ok,94.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-13T14:00:00+00:00,Espresso Machine,ok,279.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-13T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-13T14:00:00+00:00,Standing Desk,ok,449.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-13T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-14T14:00:00+00:00,Air Fryer XL,ok,94.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-14T14:00:00+00:00,Espresso Machine,ok,279.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-14T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-14T14:00:00+00:00,Standing Desk,ok,449.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-14T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-15T14:00:00+00:00,Air Fryer XL,ok,74.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-15T14:00:00+00:00,Espresso Machine,ok,279.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-15T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-15T14:00:00+00:00,Standing Desk,ok,449.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-15T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-16T14:00:00+00:00,Air Fryer XL,ok,74.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-16T14:00:00+00:00,Espresso Machine,ok,279.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-16T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-16T14:00:00+00:00,Standing Desk,ok,449.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-16T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-17T14:00:00+00:00,Air Fryer XL,ok,74.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-17T14:00:00+00:00,Espresso Machine,ok,329.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-17T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-17T14:00:00+00:00,Standing Desk,ok,449.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-17T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-18T14:00:00+00:00,Air Fryer XL,ok,74.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-18T14:00:00+00:00,Espresso Machine,ok,329.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-18T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-18T14:00:00+00:00,Standing Desk,ok,449.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-18T14:00:00+00:00,Trail Running Shoes,ok,129.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-19T14:00:00+00:00,Air Fryer XL,ok,74.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-19T14:00:00+00:00,Espresso Machine,ok,329.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-19T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-19T14:00:00+00:00,Standing Desk,ok,449.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-19T14:00:00+00:00,Trail Running Shoes,ok,128.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes
+2026-11-20T14:00:00+00:00,Air Fryer XL,ok,74.99,USD,yes,json-ld,,https://demo-store.example/products/air-fryer
+2026-11-20T14:00:00+00:00,Espresso Machine,ok,329.99,USD,yes,json-ld,,https://demo-store.example/products/espresso-machine
+2026-11-20T14:00:00+00:00,Noise-Cancelling Headphones,ok,179.00,USD,yes,json-ld,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-20T14:00:00+00:00,Standing Desk,ok,449.00,USD,yes,json-ld,,https://demo-store.example/products/standing-desk
+2026-11-20T14:00:00+00:00,Trail Running Shoes,ok,128.95,USD,yes,json-ld,,https://demo-store.example/products/trail-running-shoes

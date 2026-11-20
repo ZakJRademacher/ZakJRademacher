@@ -1,0 +1,6 @@
+product,price,currency,in_stock,lowest_seen,highest_seen,target_price,checks,last_checked,last_error_at,url
+Air Fryer XL,74.99,USD,yes,74.99,94.99,,21,2026-11-20T14:00:00+00:00,,https://demo-store.example/products/air-fryer
+Espresso Machine,329.99,USD,yes,279.99,349.99,,21,2026-11-20T14:00:00+00:00,,https://demo-store.example/products/espresso-machine
+Noise-Cancelling Headphones,179.00,USD,yes,179.00,199.00,,21,2026-11-20T14:00:00+00:00,,https://demo-store.example/products/noise-cancelling-headphones
+Standing Desk,449.00,USD,yes,449.00,499.00,450.00,21,2026-11-20T14:00:00+00:00,,https://demo-store.example/products/standing-desk
+Trail Running Shoes,128.95,USD,yes,128.95,129.95,,21,2026-11-20T14:00:00+00:00,,https://demo-store.example/products/trail-running-shoes

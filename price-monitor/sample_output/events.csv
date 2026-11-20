@@ -1,0 +1,11 @@
+observed_at,product,kind,old_price,new_price,pct_change,url
+2026-11-17T14:00:00+00:00,Espresso Machine,price_rise,279.99,329.99,17.86,https://demo-store.example/products/espresso-machine
+2026-11-15T14:00:00+00:00,Air Fryer XL,price_drop,94.99,74.99,-21.05,https://demo-store.example/products/air-fryer
+2026-11-13T14:00:00+00:00,Espresso Machine,price_drop,329.99,279.99,-15.15,https://demo-store.example/products/espresso-machine
+2026-11-11T14:00:00+00:00,Standing Desk,price_drop,499.00,449.00,-10.02,https://demo-store.example/products/standing-desk
+2026-11-11T14:00:00+00:00,Standing Desk,target_hit,450.00,449.00,,https://demo-store.example/products/standing-desk
+2026-11-09T14:00:00+00:00,Noise-Cancelling Headphones,price_drop,199.00,179.00,-10.05,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-09T14:00:00+00:00,Noise-Cancelling Headphones,back_in_stock,,,,https://demo-store.example/products/noise-cancelling-headphones
+2026-11-07T14:00:00+00:00,Air Fryer XL,price_rise,89.99,94.99,5.56,https://demo-store.example/products/air-fryer
+2026-11-06T14:00:00+00:00,Espresso Machine,price_drop,349.99,329.99,-5.71,https://demo-store.example/products/espresso-machine
+2026-11-04T14:00:00+00:00,Noise-Cancelling Headphones,out_of_stock,,,,https://demo-store.example/products/noise-cancelling-headphones

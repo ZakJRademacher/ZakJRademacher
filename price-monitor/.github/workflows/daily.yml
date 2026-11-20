@@ -1,0 +1,37 @@
+# Runs the monitor once a day and commits the updated database and reports.
+# Works once this folder is its own repository (GitHub only reads workflows
+# from .github/workflows at the repository root).
+name: Daily price check
+
+on:
+  schedule:
+    - cron: "17 13 * * *"   # 13:17 UTC every day
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: price-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check prices
+        run: python -m price_monitor run --report-dir reports
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/prices.db reports/
+          git diff --cached --quiet || git commit -m "Price check $(date -u +%Y-%m-%d)"
+          git push

@@ -1,0 +1,27 @@
+# Products to watch. Add one [[product]] block per page.
+# `name` is optional (the page title is used otherwise).
+# `target_price` is optional: you get a TARGET HIT alert when the price reaches it.
+
+[settings]
+user_agent = "price-monitor/0.1 (+https://github.com/ZakJRademacher)"
+delay_seconds = 3.0        # minimum wait between requests to the same site
+drop_threshold_pct = 1.0   # ignore drops smaller than 1%
+cache_hours = 12           # don't re-download a page fetched within this window
+
+# books.toscrape.com is a sandbox built for scraping practice.
+[[product]]
+url = "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+
+[[product]]
+url = "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
+target_price = 50.00
+
+[[product]]
+url = "https://books.toscrape.com/catalogue/soumission_998/index.html"
+
+[[product]]
+url = "https://books.toscrape.com/catalogue/sharp-objects_997/index.html"
+name = "Sharp Objects"
+
+[[product]]
+url = "https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html"
