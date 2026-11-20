@@ -34,7 +34,7 @@ ACCENT = "#3ecf9b"
 
 # slug -> (host shown in the window's address bar, project version the shot shows)
 PROJECTS = {
-    "workbench": ("localhost:8810 · data-workbench", "2.2.2"),
+    "workbench": ("Windows app · data-workbench", "3.0.0"),
     "perigee": ("perigee.zakjrademacher.workers.dev", "1.5.0"),
     "mag7": ("zakjrademacher.github.io/magnificent-seven-dashboard", "1.0.0"),
     "stringlab": ("string-lab.zakjrademacher.workers.dev", "1.0.0"),
