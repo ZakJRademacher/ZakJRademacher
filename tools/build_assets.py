@@ -37,7 +37,7 @@ PROJECTS = {
     "workbench": ("Windows app · data-workbench", "3.0.0"),
     "perigee": ("perigee.zakjrademacher.workers.dev", "1.5.0"),
     "mag7": ("zakjrademacher.github.io/magnificent-seven-dashboard", "1.0.0"),
-    "stringlab": ("string-lab.zakjrademacher.workers.dev", "1.0.0"),
+    "stringlab": ("string-lab.zakjrademacher.workers.dev", "1.0.1"),
     "commerce": ("zakjrademacher.github.io/commerce-delivery-review", "1.0.0"),
     "monthly": ("zakjrademacher.github.io/monthly-sales-review", "1.0.0"),
     "hotel": ("zakjrademacher.github.io/hotel-booking-cancellation-analysis", "1.0.0"),

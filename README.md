@@ -9,6 +9,8 @@ I build data tools and reports for recurring work. I check whether joins preserv
 
 My day job is running operations at a grocery store, where reconciling the numbers is part of every shift. I build for the people who do that work. I'm also completing a B.S. in Computer Science at Southern New Hampshire University.
 
+**Featured:** [Download Data Workbench 3.0 for Windows](https://github.com/ZakJRademacher/data-workbench/releases/latest) · [Magnificent Seven Dashboard, live ↗](https://zakjrademacher.github.io/magnificent-seven-dashboard/)
+
 **Open to** analyst and developer roles, and 15–20 hrs/week of remote contract work via [Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17).
 
 <br>
@@ -39,14 +41,16 @@ My day job is running operations at a grocery store, where reconciling the numbe
 <td width="50%" valign="top">
 <a href="https://perigee.zakjrademacher.workers.dev/"><img src="assets/card-perigee-1.5.0.webp" width="100%" alt="Perigee screenshot"></a>
 <h3><a href="https://perigee.zakjrademacher.workers.dev/">Perigee</a></h3>
-<p>A 3D explorer of near-Earth asteroids from NASA and JPL data, with a Worker API and an interpolated 30-day path for each object.</p>
+<p>A 3D explorer of the asteroids passing Earth and the satellites circling it, from NASA/JPL and CelesTrak data, with a Worker API and a predicted 30-day path for each asteroid.</p>
+<p><b>96 tests</b> run offline against saved JPL responses, and satellites are hidden rather than extrapolated once their orbit data is more than seven days old.</p>
 <p><sub><code>JavaScript</code> <code>Three.js</code> <code>Cloudflare Workers</code></sub></p>
 <p><a href="https://perigee.zakjrademacher.workers.dev/"><b>Live ↗</b></a> · <a href="https://github.com/ZakJRademacher/perigee-asteroid-tracker">Code</a> · <a href="https://github.com/ZakJRademacher/perigee-asteroid-tracker/blob/main/docs/METHODOLOGY.md">Method</a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://string-lab.zakjrademacher.workers.dev/"><img src="assets/card-stringlab-1.0.0.webp" width="100%" alt="String Lab screenshot"></a>
+<a href="https://string-lab.zakjrademacher.workers.dev/"><img src="assets/card-stringlab-1.0.1.webp" width="100%" alt="String Lab screenshot"></a>
 <h3><a href="https://string-lab.zakjrademacher.workers.dev/">String Lab</a></h3>
 <p>A guided 3D introduction to string theory for people with no physics background, with an advanced lab for exploring further.</p>
+<p>Every picture comes from the real equations. <b>71 tests</b> check the physics, saved lab states and page performance.</p>
 <p><sub><code>JavaScript</code> <code>Three.js</code> <code>Vite</code></sub></p>
 <p><a href="https://string-lab.zakjrademacher.workers.dev/"><b>Live ↗</b></a> · <a href="https://github.com/ZakJRademacher/string-lab">Code</a></p>
 </td>
