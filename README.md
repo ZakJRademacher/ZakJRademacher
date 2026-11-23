@@ -71,11 +71,11 @@ Each report is backed by a Python + SQLite pipeline with tests on every push. Na
 <p><a href="https://zakjrademacher.github.io/commerce-delivery-review/report/"><b>Live ↗</b></a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review">Code</a> · <a href="https://github.com/ZakJRademacher/commerce-delivery-review/blob/main/docs/SQL_INVESTIGATION.md">SQL</a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html"><img src="assets/card-monthly-1.0.0.webp" width="100%" alt="Monthly Sales Review screenshot"></a>
-<h3><a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html">Monthly Sales Review</a></h3>
+<a href="https://zakjrademacher.github.io/monthly-sales-review/report/"><img src="assets/card-monthly-1.0.0.webp" width="100%" alt="Monthly Sales Review screenshot"></a>
+<h3><a href="https://zakjrademacher.github.io/monthly-sales-review/report/">Monthly Sales Review</a></h3>
 <p>Sales fell <b>12.6%</b> while orders rose <b>33.5%</b>. The review traces the gap by region and category.</p>
 <p><sub><code>Tableau</code> <code>Python</code> <code>SQLite</code></sub></p>
-<p><a href="https://zakjrademacher.github.io/monthly-sales-review/deliverables/Monthly%20Sales%20Interactive.html"><b>Live ↗</b></a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review">Code</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review/blob/main/sql/review_drivers.sql">SQL</a></p>
+<p><a href="https://zakjrademacher.github.io/monthly-sales-review/report/"><b>Live ↗</b></a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review">Code</a> · <a href="https://github.com/ZakJRademacher/monthly-sales-review/blob/main/sql/review_drivers.sql">SQL</a></p>
 </td>
 </tr>
 <tr>
