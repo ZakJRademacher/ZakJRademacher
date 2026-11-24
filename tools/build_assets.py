@@ -25,6 +25,7 @@ import base64
 import io
 import os
 import sys
+from html import escape
 from pathlib import Path
 
 import portfolio
@@ -41,9 +42,6 @@ OUT = ROOT.parent / "assets"
 
 ACCENT = "#3ecf9b"
 
-MANIFEST = portfolio.load()
-# slug -> (host shown in the window's address bar, project version the shot shows)
-PROJECTS = {p["card"]["shot"]: (p["card"]["host"], p["card"]["shot_version"]) for p in MANIFEST["projects"]}
 
 FONTS = ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800'
          '&family=JetBrains+Mono:wght@400;500;600&display=block">')
@@ -145,7 +143,7 @@ def card_html(shot_b64: str, host: str) -> str:
    center top/100% auto no-repeat}}
 </style></head><body>
 <div class="w"><div class="top"><s></s><s></s><s></s>
-<div class="url mono">{host}</div></div><div class="img"></div></div>
+<div class="url mono">{escape(host)}</div></div><div class="img"></div></div>
 </body></html>"""
 
 
@@ -156,7 +154,8 @@ def shoot(page, html: str, selector: str, scale: int) -> Image.Image:
     return Image.open(io.BytesIO(png))
 
 
-def render_images(cards_only: bool) -> None:
+def render_images(cards: list[tuple[str, str, str]], cards_only: bool) -> None:
+    """cards: (screenshot name, address-bar text, version the screenshot shows) per project."""
     if Image is None or sync_playwright is None:
         sys.exit("Rendering images needs: pip install playwright pillow (use --readme to skip images)")
     OUT.mkdir(exist_ok=True)
@@ -170,7 +169,7 @@ def render_images(cards_only: bool) -> None:
             img.save(OUT / f"banner-{name}.png", optimize=True)
 
         page_1x = browser.new_page(device_scale_factor=1, viewport={"width": 1100, "height": 900})
-        for slug, (host, version) in PROJECTS.items():
+        for slug, host, version in cards:
             b64 = base64.b64encode((SHOTS / f"{slug}-{version}.webp").read_bytes()).decode()
             img = shoot(page_1x, card_html(b64, host), ".w", 1)
             img.save(OUT / f"card-{slug}-{version}.webp", quality=86, method=6)
@@ -185,12 +184,20 @@ def main() -> None:
     parser.add_argument("--cards", action="store_true", help="rebuild the project cards only (not the banner)")
     parser.add_argument("--readme", action="store_true", help="only rewrite the README blocks (no browser)")
     args = parser.parse_args()
-    problems = portfolio.validate(MANIFEST)
+    try:
+        manifest = portfolio.load()
+    except (OSError, ValueError) as e:
+        sys.exit(f"cannot read portfolio.json: {e}")
+    problems = portfolio.validate(manifest)
     if problems:
         sys.exit("portfolio.json is not valid:\n  " + "\n  ".join(problems))
     if not args.readme:
-        render_images(cards_only=args.cards)
-    changed = portfolio.update_readme(MANIFEST)
+        cards = [(p["card"]["shot"], p["card"]["host"], p["card"]["shot_version"]) for p in manifest["projects"]]
+        render_images(cards, cards_only=args.cards)
+    try:
+        changed = portfolio.update_readme(manifest)
+    except ValueError as e:
+        sys.exit(str(e))
     print("README.md blocks updated" if changed else "README.md blocks already up to date")
 
 

@@ -12,6 +12,7 @@ is hand-written and is left alone.
 | `tools/build_assets.py` | Renders `assets/banner-*.png` and the cards from `tools/shots/`, then rewrites the README blocks. `--readme` rewrites only the blocks and needs no browser. |
 | `tools/portfolio.py` | Loads and validates the manifest and renders the README blocks. |
 | `tools/check_portfolio.py` | Read-only check against GitHub and the README. Exit code 1 on any error. |
+| `tools/test_portfolio.py` | Unit tests for the above. Run `python -m unittest discover -s tools`; no network needed. |
 
 ## Manifest fields
 
@@ -31,7 +32,7 @@ The top level has `about`, `owner` (the GitHub user) and `projects`. Each projec
 | `tags` | Technology tags under the text. |
 | `card` | `{shot, shot_version, host}`: the screenshot in `tools/shots/` and the address shown in the card's window frame. |
 | `links` | Rows of `{label, url, bold?}` under the tags. |
-| `checks` | Checks that apply: `release`, `links` and, only when there is a live URL, `site`. |
+| `checks` | Checks that apply: always `release` and `links`, plus `site` exactly when there is a live URL. |
 
 Placeholders work in `label`, `url`, `pitch` and `proof`: `{repo_url}`, `{live}`,
 `{version}` and `{version_short}` (the version without its patch number).
@@ -71,13 +72,17 @@ Chromium. Fonts load from Google Fonts.
 
 - The manifest is well formed (`portfolio.validate`).
 - Each repo is public and not archived, and its latest Release equals `version`.
-- The README blocks match what the manifest generates.
+- The README blocks match what the manifest generates, and each block's begin and end
+  comments appear exactly once, in order.
 - Each card image and screenshot exists.
-- No tracked file, and no commit on `HEAD` or a remote branch, carries AI-assistant
-  attribution.
+- No file in the repo (working tree or staged, any text extension), and no commit on
+  `HEAD` or a remote branch, carries AI-assistant attribution or a co-author
+  trailer for anyone but the owner or a bot. Remote branches are read as last fetched.
 - Warnings: an About homepage that differs from `live`, a card screenshot older
   than the current release, and unused card images.
 
 If a `.portfolio` folder sits next to this repository (or `PORTFOLIO_PRIVATE_DIR`
 points at one) and holds `blocked.json`, the check also fails when any name on that
-list appears in a tracked file. That list is kept out of this repository.
+list appears in a text file. That list is also what keeps for-sale or retired projects
+off the manifest, since GitHub cannot say which public repos belong on a portfolio.
+It is kept out of this repository.
