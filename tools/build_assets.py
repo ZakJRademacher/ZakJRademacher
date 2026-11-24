@@ -1,18 +1,21 @@
-"""Build the profile README images.
+"""Build the profile README images and the generated README blocks.
 
-Renders the banner (light + dark) and one framed preview per project from
-HTML templates with headless Chromium, then writes compressed WebP/PNG files
-into ../assets.
+The project list lives in ../portfolio.json. This script renders the banner
+(light + dark) and one framed preview per project from HTML templates with
+headless Chromium, writes compressed WebP/PNG files into ../assets, and then
+rewrites the Featured line and the project cards in README.md from the manifest.
 
-    python tools/build_assets.py            # banner and cards
-    python tools/build_assets.py --cards    # cards only
+    python tools/build_assets.py            # banner, cards and README blocks
+    python tools/build_assets.py --cards    # cards and README blocks
+    python tools/build_assets.py --readme   # README blocks only (no browser needed)
 
 Each card is named for the project version it shows (card-<slug>-<version>.webp,
 from shots/<slug>-<version>.webp), so a new version gets a new file and GitHub's
 image cache never serves an old picture.
 
-Requires: playwright (with Chromium, or CHROMIUM_PATH pointing at Chrome or
-Edge) and Pillow. Inter and JetBrains Mono load from Google Fonts.
+Images need: playwright (with Chromium, or CHROMIUM_PATH pointing at Chrome or
+Edge) and Pillow. Inter and JetBrains Mono load from Google Fonts. --readme needs
+neither.
 """
 
 from __future__ import annotations
@@ -21,10 +24,16 @@ import argparse
 import base64
 import io
 import os
+import sys
 from pathlib import Path
 
-from PIL import Image
-from playwright.sync_api import sync_playwright
+import portfolio
+
+try:
+    from PIL import Image
+    from playwright.sync_api import sync_playwright
+except ImportError:  # --readme needs neither
+    Image = sync_playwright = None
 
 ROOT = Path(__file__).resolve().parent
 SHOTS = ROOT / "shots"
@@ -32,17 +41,9 @@ OUT = ROOT.parent / "assets"
 
 ACCENT = "#3ecf9b"
 
+MANIFEST = portfolio.load()
 # slug -> (host shown in the window's address bar, project version the shot shows)
-PROJECTS = {
-    "workbench": ("Windows app · data-workbench", "3.0.0"),
-    "perigee": ("perigee.zakjrademacher.workers.dev", "1.5.0"),
-    "mag7": ("zakjrademacher.github.io/magnificent-seven-dashboard", "1.0.0"),
-    "stringlab": ("string-lab.zakjrademacher.workers.dev", "1.0.1"),
-    "commerce": ("zakjrademacher.github.io/commerce-delivery-review", "1.0.0"),
-    "monthly": ("zakjrademacher.github.io/monthly-sales-review", "1.0.0"),
-    "hotel": ("zakjrademacher.github.io/hotel-booking-cancellation-analysis", "1.0.0"),
-    "marketing": ("zakjrademacher.github.io/marketing-campaign-performance", "1.0.0"),
-}
+PROJECTS = {p["card"]["shot"]: (p["card"]["host"], p["card"]["shot_version"]) for p in MANIFEST["projects"]}
 
 FONTS = ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800'
          '&family=JetBrains+Mono:wght@400;500;600&display=block">')
@@ -155,10 +156,9 @@ def shoot(page, html: str, selector: str, scale: int) -> Image.Image:
     return Image.open(io.BytesIO(png))
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Build the profile README images.")
-    parser.add_argument("--cards", action="store_true", help="rebuild the project cards only")
-    cards_only = parser.parse_args().cards
+def render_images(cards_only: bool) -> None:
+    if Image is None or sync_playwright is None:
+        sys.exit("Rendering images needs: pip install playwright pillow (use --readme to skip images)")
     OUT.mkdir(exist_ok=True)
     with sync_playwright() as p:
         # CHROMIUM_PATH lets you point at a preinstalled browser.
@@ -178,6 +178,20 @@ def main() -> None:
         browser.close()
     for f in sorted(OUT.iterdir()):
         print(f"{f.name:28} {f.stat().st_size/1024:7.1f} KB")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Build the profile README images and generated blocks.")
+    parser.add_argument("--cards", action="store_true", help="rebuild the project cards only (not the banner)")
+    parser.add_argument("--readme", action="store_true", help="only rewrite the README blocks (no browser)")
+    args = parser.parse_args()
+    problems = portfolio.validate(MANIFEST)
+    if problems:
+        sys.exit("portfolio.json is not valid:\n  " + "\n  ".join(problems))
+    if not args.readme:
+        render_images(cards_only=args.cards)
+    changed = portfolio.update_readme(MANIFEST)
+    print("README.md blocks updated" if changed else "README.md blocks already up to date")
 
 
 if __name__ == "__main__":

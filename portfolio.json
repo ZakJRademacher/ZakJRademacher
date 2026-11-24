@@ -1,0 +1,178 @@
+{
+  "about": "Source for the project cards and the Featured line in README.md. Rules and fields: tools/README.md. Run tools/check_portfolio.py before publishing.",
+  "owner": "ZakJRademacher",
+  "projects": [
+    {
+      "repo": "data-workbench",
+      "title": "Data Workbench",
+      "category": "software",
+      "section": "software",
+      "live": null,
+      "version": "3.0.0",
+      "featured": {"order": 1, "label": "Download Data Workbench {version_short} for Windows", "url": "{repo_url}/releases/latest"},
+      "pitch": "A Windows app, with its own window and installer, that cleans and joins CSV and Excel exports, sends questionable rows to a review queue, and records output hashes. Version 3.0 adds screens for reconciling Stripe payouts against QuickBooks deposits and Shopify or WooCommerce orders against their payments. A separate reference implementation checks counts, totals, and joins against four public datasets.",
+      "proof": "The 2.1 payout reconciliation preview made **zero incorrect automatic matches across 9,895 synthetic payouts**. Stripe and QuickBooks export layouts still need validation with files from those platforms.",
+      "tags": ["Python", "FastAPI", "DuckDB"],
+      "card": {"shot": "workbench", "shot_version": "3.0.0", "host": "Windows app · data-workbench"},
+      "links": [
+        [
+          {"label": "Download for Windows", "url": "{repo_url}/releases/latest", "bold": true},
+          {"label": "Setup and demo", "url": "{repo_url}#open-the-app"}
+        ],
+        [
+          {"label": "Code", "url": "{repo_url}"},
+          {"label": "Architecture", "url": "{repo_url}/blob/main/docs/TECHNICAL.md"},
+          {"label": "Regression tests", "url": "{repo_url}/tree/main/realdata"},
+          {"label": "Reconciliation evidence", "url": "{repo_url}/blob/main/docs/RECONCILIATION_DESIGN.md#phase-1-status"}
+        ]
+      ],
+      "checks": ["release", "links"]
+    },
+    {
+      "repo": "magnificent-seven-dashboard",
+      "title": "Magnificent Seven Dashboard",
+      "category": "web",
+      "section": "software",
+      "live": "https://zakjrademacher.github.io/magnificent-seven-dashboard/",
+      "version": "1.0.0",
+      "featured": {"order": 2, "label": "Magnificent Seven Dashboard, live ↗", "url": "{live}"},
+      "pitch": "A risk and return dashboard comparing the Magnificent Seven with an S&P 500 ETF. The scheduled refresh validates prices against the trading calendar and keeps the last good data when checks block publication. The public status page shows what happened on each run.",
+      "proof": "A daily watchdog raises an issue if the data falls two trading days behind. A parity test checks that Python and browser metrics agree to within 1e-9.",
+      "tags": ["Python", "pandas", "GitHub Actions"],
+      "card": {"shot": "mag7", "shot_version": "1.0.0", "host": "zakjrademacher.github.io/magnificent-seven-dashboard"},
+      "links": [
+        [
+          {"label": "Live ↗", "url": "{live}", "bold": true},
+          {"label": "Pipeline status", "url": "{live}status.html"},
+          {"label": "Code", "url": "{repo_url}"}
+        ]
+      ],
+      "checks": ["release", "links", "site"]
+    },
+    {
+      "repo": "perigee-asteroid-tracker",
+      "title": "Perigee",
+      "category": "web",
+      "section": "software",
+      "live": "https://perigee.zakjrademacher.workers.dev/",
+      "version": "1.5.0",
+      "featured": null,
+      "pitch": "A 3D explorer of the asteroids passing Earth and the satellites circling it, from NASA/JPL and CelesTrak data, with a Worker API and a predicted 30-day path for each asteroid.",
+      "proof": "**96 tests** run offline against saved JPL responses, and satellites are hidden rather than extrapolated once their orbit data is more than seven days old.",
+      "tags": ["JavaScript", "Three.js", "Cloudflare Workers"],
+      "card": {"shot": "perigee", "shot_version": "1.5.0", "host": "perigee.zakjrademacher.workers.dev"},
+      "links": [
+        [
+          {"label": "Live ↗", "url": "{live}", "bold": true},
+          {"label": "Code", "url": "{repo_url}"},
+          {"label": "Method", "url": "{repo_url}/blob/main/docs/METHODOLOGY.md"}
+        ]
+      ],
+      "checks": ["release", "links", "site"]
+    },
+    {
+      "repo": "string-lab",
+      "title": "String Lab",
+      "category": "web",
+      "section": "software",
+      "live": "https://string-lab.zakjrademacher.workers.dev/",
+      "version": "1.0.1",
+      "featured": null,
+      "pitch": "A guided 3D introduction to string theory for people with no physics background, with an advanced lab for exploring further.",
+      "proof": "Every picture comes from the real equations. **71 tests** check the physics, saved lab states and page performance.",
+      "tags": ["JavaScript", "Three.js", "Vite"],
+      "card": {"shot": "stringlab", "shot_version": "1.0.1", "host": "string-lab.zakjrademacher.workers.dev"},
+      "links": [
+        [
+          {"label": "Live ↗", "url": "{live}", "bold": true},
+          {"label": "Code", "url": "{repo_url}"}
+        ]
+      ],
+      "checks": ["release", "links", "site"]
+    },
+    {
+      "repo": "commerce-delivery-review",
+      "title": "Commerce Delivery Review",
+      "category": "web",
+      "section": "analysis",
+      "live": "https://zakjrademacher.github.io/commerce-delivery-review/report/",
+      "version": "1.0.0",
+      "featured": null,
+      "pitch": "Two states held **50.7%** of 6,534 late deliveries, so that's where operations should look first.",
+      "proof": null,
+      "tags": ["Power BI", "DAX", "Python", "SQLite"],
+      "card": {"shot": "commerce", "shot_version": "1.0.0", "host": "zakjrademacher.github.io/commerce-delivery-review"},
+      "links": [
+        [
+          {"label": "Live ↗", "url": "{live}", "bold": true},
+          {"label": "Code", "url": "{repo_url}"},
+          {"label": "SQL", "url": "{repo_url}/blob/main/docs/SQL_INVESTIGATION.md"}
+        ]
+      ],
+      "checks": ["release", "links", "site"]
+    },
+    {
+      "repo": "monthly-sales-review",
+      "title": "Monthly Sales Review",
+      "category": "web",
+      "section": "analysis",
+      "live": "https://zakjrademacher.github.io/monthly-sales-review/report/",
+      "version": "1.0.0",
+      "featured": null,
+      "pitch": "Sales fell **12.6%** while orders rose **33.5%**. The review traces the gap by region and category.",
+      "proof": null,
+      "tags": ["Tableau", "Python", "SQLite"],
+      "card": {"shot": "monthly", "shot_version": "1.0.0", "host": "zakjrademacher.github.io/monthly-sales-review"},
+      "links": [
+        [
+          {"label": "Live ↗", "url": "{live}", "bold": true},
+          {"label": "Code", "url": "{repo_url}"},
+          {"label": "SQL", "url": "{repo_url}/blob/main/sql/review_drivers.sql"}
+        ]
+      ],
+      "checks": ["release", "links", "site"]
+    },
+    {
+      "repo": "hotel-booking-cancellation-analysis",
+      "title": "Hotel Booking Cancellations",
+      "category": "web",
+      "section": "analysis",
+      "live": "https://zakjrademacher.github.io/hotel-booking-cancellation-analysis/report/",
+      "version": "1.0.0",
+      "featured": null,
+      "pitch": "Group bookings cancelled at **74.7%** (City Hotel, 2016), with a memo on where to test better confirmation.",
+      "proof": null,
+      "tags": ["Tableau", "Python", "SQLite"],
+      "card": {"shot": "hotel", "shot_version": "1.0.0", "host": "zakjrademacher.github.io/hotel-booking-cancellation-analysis"},
+      "links": [
+        [
+          {"label": "Live ↗", "url": "{live}", "bold": true},
+          {"label": "Code", "url": "{repo_url}"},
+          {"label": "Memo", "url": "{repo_url}/blob/main/docs/DECISION_MEMO.md"}
+        ]
+      ],
+      "checks": ["release", "links", "site"]
+    },
+    {
+      "repo": "marketing-campaign-performance",
+      "title": "Marketing Campaign Performance",
+      "category": "web",
+      "section": "analysis",
+      "live": "https://zakjrademacher.github.io/marketing-campaign-performance/report/",
+      "version": "1.0.0",
+      "featured": null,
+      "pitch": "Prior successes subscribed at **48.1%** vs 7.8%, with a proposed follow-up experiment to test it.",
+      "proof": null,
+      "tags": ["Power BI", "DAX", "Python", "SQLite"],
+      "card": {"shot": "marketing", "shot_version": "1.0.0", "host": "zakjrademacher.github.io/marketing-campaign-performance"},
+      "links": [
+        [
+          {"label": "Live ↗", "url": "{live}", "bold": true},
+          {"label": "Code", "url": "{repo_url}"},
+          {"label": "Experiment", "url": "{repo_url}/blob/main/docs/EXPERIMENT_PROPOSAL.md"}
+        ]
+      ],
+      "checks": ["release", "links", "site"]
+    }
+  ]
+}

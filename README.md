@@ -9,7 +9,9 @@ I build data tools and reports for recurring work. I check whether joins preserv
 
 My day job is running operations at a grocery store, where reconciling the numbers is part of every shift. I build for the people who do that work. I'm also completing a B.S. in Computer Science at Southern New Hampshire University.
 
+<!-- portfolio:begin featured -->
 **Featured:** [Download Data Workbench 3.0 for Windows](https://github.com/ZakJRademacher/data-workbench/releases/latest) · [Magnificent Seven Dashboard, live ↗](https://zakjrademacher.github.io/magnificent-seven-dashboard/)
+<!-- portfolio:end featured -->
 
 **Open to** analyst and developer roles, and 15–20 hrs/week of remote contract work via [Upwork](https://www.upwork.com/freelancers/~0155455f2cab08db17).
 
@@ -17,6 +19,7 @@ My day job is running operations at a grocery store, where reconciling the numbe
 
 ## Software
 
+<!-- portfolio:begin software -->
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -56,11 +59,13 @@ My day job is running operations at a grocery store, where reconciling the numbe
 </td>
 </tr>
 </table>
+<!-- portfolio:end software -->
 
 ## Analysis & reporting
 
 Each report is backed by a Python + SQLite pipeline with tests on every push. Native Power BI and Tableau files download from each repo.
 
+<!-- portfolio:begin analysis -->
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -95,6 +100,7 @@ Each report is backed by a Python + SQLite pipeline with tests on every push. Na
 </td>
 </tr>
 </table>
+<!-- portfolio:end analysis -->
 
 ## How I work
 
