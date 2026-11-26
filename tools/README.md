@@ -60,6 +60,7 @@ pip install playwright pillow && playwright install chromium
 python tools/build_assets.py --cards    # cards and README blocks; add nothing to rebuild the banner too
 python tools/build_assets.py --readme   # README blocks only
 python tools/check_portfolio.py         # add --offline to skip the GitHub checks
+python -m unittest discover -s tools    # unit tests
 ```
 
 Shots and cards are named for the project version they show:
@@ -78,11 +79,30 @@ Chromium. Fonts load from Google Fonts.
 - No file in the repo (working tree or staged, any text extension), and no commit on
   `HEAD` or a remote branch, carries AI-assistant attribution or a co-author
   trailer for anyone but the owner or a bot. Remote branches are read as last fetched.
-- Warnings: an About homepage that differs from `live`, a card screenshot older
-  than the current release, and unused card images.
+- No name from the private block list (below) appears in a file or in published history.
+- Warnings: a stem from the private stem list, an About homepage that differs from
+  `live`, a card screenshot older than the current release, and unused card images.
+
+## Private lists
 
 If a `.portfolio` folder sits next to this repository (or `PORTFOLIO_PRIVATE_DIR`
-points at one) and holds `blocked.json`, the check also fails when any name on that
-list appears in a text file. That list is also what keeps for-sale or retired projects
-off the manifest, since GitHub cannot say which public repos belong on a portfolio.
-It is kept out of this repository.
+points at one), the check reads two flat JSON lists of text from it. Neither list is
+kept in this repository.
+
+| File | A hit is | Meaning |
+| --- | --- | --- |
+| `blocked.json` | an error | Names that must not appear in this repo. This list is also what keeps for-sale or retired projects off the manifest, since GitHub cannot say which public repos belong on a portfolio. |
+| `blocked-stems.json` | a warning | Loose stems. A hit is for a person to review, never a failure. |
+
+Both lists are matched the same way, against every text file in the repo (working tree
+and staged) and against published history (commit messages, author fields, file names
+and every version of every file):
+
+- Case-insensitive substring.
+- A term that contains a space matches whole words only, and the space matches any run
+  of white space, because some terms are ordinary English phrases.
+
+Output names a list entry by its number (`entry #3` is the third item), never by its
+text, so a report can be shared without repeating the names. To scan another clone's
+history, such as a fresh clone of GitHub, run
+`python tools/check_portfolio.py --history-of <path>`.

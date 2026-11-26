@@ -178,16 +178,103 @@ class AttributionAndBlocklist(unittest.TestCase):
                       "Co-authored-by: Zak <214904468+ZakJRademacher@users.noreply.github.com>")
         self.assertEqual(check_portfolio.history_problems(ok, self.OWNER), [])
 
-    def test_blocklist_shape(self):
+    def test_list_shape(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "blocked.json"
-            path.write_text(json.dumps(["Alpha", "beta"]), encoding="utf-8")
-            self.assertEqual(check_portfolio.load_blocklist(path), (["alpha", "beta"], None))
+            path.write_text(json.dumps(["Alpha", " beta "]), encoding="utf-8")
+            self.assertEqual(check_portfolio.load_list(path), (["Alpha", "beta"], None))
             for bad in ({"alpha": 1}, ["ok", 3], ["  "], "alpha"):
                 path.write_text(json.dumps(bad), encoding="utf-8")
-                self.assertIsNotNone(check_portfolio.load_blocklist(path)[1], bad)
+                self.assertIsNotNone(check_portfolio.load_list(path)[1], bad)
             path.write_text("not json", encoding="utf-8")
-            self.assertIsNotNone(check_portfolio.load_blocklist(path)[1])
+            self.assertIsNotNone(check_portfolio.load_list(path)[1])
+
+
+def terms(*entries):
+    return check_portfolio.compile_terms(list(entries))
+
+
+class MatchingRules(unittest.TestCase):
+    def hit(self, entries, text):
+        return [n for n, _, _ in check_portfolio.matches(terms(*entries), text)]
+
+    def test_single_word_is_a_case_insensitive_substring(self):
+        self.assertEqual(self.hit(["alpha"], "see ALPHAbet soup"), [1])
+        self.assertEqual(self.hit(["alpha"], "nothing here"), [])
+
+    def test_hyphenated_term_is_a_plain_substring(self):
+        self.assertEqual(self.hit(["night-shift"], "the Night-Shifts list"), [1])
+
+    def test_multi_word_term_needs_whole_words(self):
+        self.assertEqual(self.hit(["blue lamp"], "The Blue Lamp opens"), [1])
+        self.assertEqual(self.hit(["blue lamp"], "ultrablue lampshade"), [])
+        self.assertEqual(self.hit(["blue lamp"], "my blue lamps"), [])
+        self.assertEqual(self.hit(["red kite"], "no redkite here, no red kites either"), [])
+
+    def test_spaces_match_any_run_of_white_space(self):
+        self.assertEqual(self.hit(["blue lamp"], "blue \n  lamp"), [1])
+        self.assertEqual(self.hit(["blue lamp"], "blue-lamp"), [])
+
+    def test_entry_numbers_and_lines_are_reported(self):
+        found = check_portfolio.matches(terms("zzz", "beta", "gamma"), "one\ntwo beta\nthree gamma")
+        self.assertEqual([(n, line) for n, line, _ in found], [(2, 2), (3, 3)])
+
+    def test_html_escaped_text_is_decoded_before_matching(self):
+        self.assertEqual(self.hit(["fish & chips"], "Fish &amp; Chips"), [1])
+        self.assertEqual(self.hit(["fish & chips"], "Fish &#38; Chips"), [1])
+        self.assertEqual(self.hit(["fish & chips"], "Fish &amp;chips"), [])
+
+    def test_regex_characters_are_literal(self):
+        self.assertEqual(self.hit(["a.c"], "abc"), [])
+        self.assertEqual(self.hit(["a.c"], "a.c"), [1])
+
+    def test_snippet_masks_the_match(self):
+        (_, _, snippet), = check_portfolio.matches(terms("consolid"), "we consolidated it", context=10)
+        self.assertIn("<#1>", snippet)
+        self.assertNotIn("consolid", snippet)
+
+
+class PrivateLists(unittest.TestCase):
+    def test_exact_hits_fail_and_stem_hits_warn_without_naming_the_term(self):
+        texts = {"a.md": "uses Secretname here", "b.md": "a consolidated view", "c.md": "clean"}
+        errs, warns = check_portfolio.scan_files(texts, terms("secretname"), terms("consolidat"))
+        self.assertEqual(len(errs), 1)
+        self.assertEqual(len(warns), 1)
+        self.assertIn("a.md:1", errs[0])
+        self.assertIn("entry #1", errs[0])
+        self.assertIn("b.md:1", warns[0])
+        self.assertIn("stem #1", warns[0])
+        self.assertNotIn("secretname", (errs[0] + warns[0]).lower())
+        self.assertNotIn("consolidat", errs[0].lower())
+
+    def test_stem_alone_is_never_an_error(self):
+        errs, warns = check_portfolio.scan_files({"b.md": "consolidating"}, [], terms("consolidat"))
+        self.assertEqual((errs, len(warns)), ([], 1))
+
+    def test_history_scan_covers_messages_old_versions_and_file_names(self):
+        import subprocess
+
+        def run(*args):
+            subprocess.run(["git", "-C", str(repo), "-c", "user.name=T", "-c", "user.email=t@example.com", *args],
+                           check=True, capture_output=True)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            run("init", "-q")
+            (repo / "README.md").write_text("old text mentions Secretname\n", encoding="utf-8")
+            run("add", "-A")
+            run("commit", "-q", "-m", "Add readme about consolidation")
+            (repo / "README.md").write_text("clean text\n", encoding="utf-8")
+            (repo / "secretname-notes.txt").write_text("hello\n", encoding="utf-8")
+            run("add", "-A")
+            run("commit", "-q", "-m", "Mention secretname in the message")
+            errs, warns = check_portfolio.scan_history(repo, terms("secretname"), terms("consolidat"))
+        joined = " | ".join(errs)
+        self.assertIn("1 file version(s) of README.md match entry #1", joined)
+        self.assertIn("1 commit message(s) match entry #1", joined)
+        self.assertIn("1 file name(s) of secretname-notes.txt match entry #1", joined)
+        self.assertTrue(any("commit message" in w and "stem #1" in w for w in warns))
+        self.assertNotIn("Secretname", joined)
 
 
 if __name__ == "__main__":
