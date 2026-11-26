@@ -28,7 +28,8 @@ Warnings (exit code 0):
 
 Matching rules for both private lists: case-insensitive substring, except that a
 term containing a space matches whole words only (spaces match any run of white
-space), because some of them are ordinary English phrases. Output names a list entry
+space), because some of them are ordinary English phrases. Text is searched as
+written and with HTML character references (such as &amp;) decoded. Output names a list entry
 by its number (entry #3 is the third item), never by its text, so a report can be
 shared without repeating the names.
 
@@ -53,6 +54,7 @@ import sys
 sys.dont_write_bytecode = True  # a read-only check should not leave __pycache__ behind
 
 import argparse
+import html
 import json
 import os
 import re
@@ -227,16 +229,27 @@ def compile_terms(entries: list[str]) -> list[re.Pattern]:
 
 
 def matches(patterns: list[re.Pattern], text: str, context: int = 0) -> list[tuple[int, int, str]]:
-    """First match of each entry in the text: (entry number, line number, masked snippet)."""
+    """First match of each entry in the text: (entry number, line number, masked snippet).
+
+    Text is searched as written and, when it holds HTML character references such as
+    &amp;, again with those decoded, so an escaped spelling cannot hide a name.
+    """
+    views = [text]
+    if "&" in text:
+        decoded = html.unescape(text)
+        if decoded != text:
+            views.append(decoded)
     found = []
     for number, pattern in enumerate(patterns, 1):
-        m = pattern.search(text)
-        if m:
-            snippet = ""
-            if context:
-                a, b = max(0, m.start() - context), min(len(text), m.end() + context)
-                snippet = " ".join((text[a:m.start()] + f"<#{number}>" + text[m.end():b]).split())
-            found.append((number, text.count("\n", 0, m.start()) + 1, snippet))
+        for view in views:
+            m = pattern.search(view)
+            if m:
+                snippet = ""
+                if context:
+                    a, b = max(0, m.start() - context), min(len(view), m.end() + context)
+                    snippet = " ".join((view[a:m.start()] + f"<#{number}>" + view[m.end():b]).split())
+                found.append((number, view.count("\n", 0, m.start()) + 1, snippet))
+                break
     return found
 
 
